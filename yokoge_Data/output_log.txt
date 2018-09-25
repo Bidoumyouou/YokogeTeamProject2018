@@ -1,0 +1,36 @@
+Mono path[0] = 'C:/Users/森康一/Documents/Git/新しいフォルダー/yokoge_Data/Managed'
+Mono path[1] = 'C:/Users/森康一/Documents/Git/新しいフォルダー/yokoge_Data/Mono'
+Mono config path = 'C:/Users/森康一/Documents/Git/新しいフォルダー/yokoge_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/森康一/Documents/Git/新しいフォルダー/yokoge_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55288
+Broadcasting "[IP] 169.254.165.53 [Port] 55288 [Flags] 3 [Guid] 2896234640 [EditorId] 3906026171 [Version] 1048832 [Id] WindowsPlayer(morikouichi) [Debug] 1" to [169.254.255.255:54997]...
+Waiting for connection from host on [0.0.0.0:55288]...
+Timed out. Continuing without host connection.
+Started listening to [0.0.0.0:55288]
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56640
+PlayerConnection already initialized - listening to [0.0.0.0:55288]
+Player data archive not found at `C:/Users/森康一/Documents/Git/新しいフォルダー/yokoge_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     1792 MB
+    Driver:   10.18.10.3308
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.031 seconds
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\森康一\Documents\Git\新しいフォルダー\yokoge_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.

@@ -1,0 +1,124 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+
+//拡張方針としては
+/*
+ 現在一種類しか吹っ飛びを付加出来ないので
+ 案①複数のベクトルを保守、管理できるようにする
+ tmp_scelerとvector,scalerがひとつづつあればよさそう
+ をいずれやるべきまずは一種類で管理する
+
+ Damegeとスカラ、ベクトル、スピードが被っているので共通化したい
+ */
+
+
+public class TestEnemy : Charactor
+{
+    
+    
+    public E_ModeBase[] ModeList = new E_ModeBase[8]; 
+
+    public E_ModeParam ModeParam;
+    public string Modename;
+
+ 
+    
+    //不要？bool clashflag = false;
+    // Use this for initialization
+    bool Movable = true;
+    //ただ左右に移動するだけの処理
+    public void Move(float _speed)
+    {
+        if (!Movable) { return; }
+        //isRightをローカルのScaleで測定
+        SetScale();
+        transform.Translate(new Vector2(_speed * MyCommonF.BoolToPorn(IsRight), 0));
+    }
+    //敵の左右反転によるスケールをセットする関数
+    protected void SetScale()
+    {
+        Vector3 setvec = new Vector3(0.0f, transform.lossyScale.y, transform.lossyScale.z);
+        if (IsRight) { setvec.x = BaseScale_x; } else { setvec.x = BaseScale_x * -1; }
+        transform.localScale = setvec;
+
+    }
+
+    protected void Start()
+    {
+        tag = E_Tag.Enemy;
+        ParentStart();
+        Mode = ModeList[0];
+        Mode.Mode_Start(this);
+        animator = GetComponent<Animator>();
+        BaseScale_x = transform.lossyScale.x;//;//エネミーの元々のスケールを取得
+
+    }
+    override public void ChangeMode(int _nextno)
+    {
+        //もしモードが「変わっていたら」
+        if (modeindex != _nextno)
+        {
+            pre_mode_index = modeindex;
+        }
+        //対象のモードの当たり判定を破棄
+        Mode.DeleteHitBox(this);
+
+        //Mode = new P_ModeBase();
+        Mode = ModeList[_nextno];
+        if (animator != null)
+        {
+            animator.SetInteger("Status", _nextno);
+            animator.SetTrigger("ChangeMode");
+        }
+        modetime = 0.0f;
+        Mode.index = modeindex =_nextno;
+        Mode.Mode_Start(this);
+
+    }
+
+    // Update is called once per frame
+    protected void Update()
+    {
+
+        //Modename = Mode.obj.name;
+        IsRight = (transform.localScale.x > 0);
+        ParentUpdate();
+        //エネミーのモード時間経過はここで管理
+        
+        if (Mode != null)
+            Mode.Mode_Update(this);
+
+        if (animator != null)
+            animator.SetInteger("Mode", modeindex);
+
+        //if(Mode.name == "E001_Dead") { return; }
+        //吹っ飛びの管理
+        //ClashクラスがアクティブならDamegedモードに遷移
+        if (clash.Active)
+        {
+            ChangeMode(1);
+        }
+        //状態の管理
+        status.CheckAll();
+        if (!status.Alive)
+        {
+            //直前のモードを保存
+            //if(Mode.name != "E001_Dead")
+            ChangeMode(2);
+            //Delete();
+        }
+    }
+    //OnTriggerEnter2Dが呼ばれるのが一瞬なので二か所で用いることはできない？
+   
+    //やられた時
+    void Delete()
+    {
+        stage_manager.AddScore(10);
+        Destroy(gameObject);
+    }
+
+
+
+}

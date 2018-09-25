@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokoGeTeam2018_alt", "YokoGeTeam2018_alt.csproj", "{F9A6547C-1826-CBBF-D68D-A937BF738D43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokoGeTeam2018_alt.Editor", "YokoGeTeam2018_alt.Editor.csproj", "{6AC78B83-8681-FD3B-C023-06C7DF5F948B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9A6547C-1826-CBBF-D68D-A937BF738D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A6547C-1826-CBBF-D68D-A937BF738D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A6547C-1826-CBBF-D68D-A937BF738D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A6547C-1826-CBBF-D68D-A937BF738D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC78B83-8681-FD3B-C023-06C7DF5F948B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC78B83-8681-FD3B-C023-06C7DF5F948B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC78B83-8681-FD3B-C023-06C7DF5F948B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC78B83-8681-FD3B-C023-06C7DF5F948B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

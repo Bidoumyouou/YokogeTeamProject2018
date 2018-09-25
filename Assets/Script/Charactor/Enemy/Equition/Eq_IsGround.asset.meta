@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 95a68d521e62ff34fa408090d736abc4
+labels:
+- Data
+- Eq_IsGround
+- ScriptableObject
+timeCreated: 1522337138
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

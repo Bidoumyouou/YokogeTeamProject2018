@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: 42c0cbc5895facf4e8a05a1573ada162
+timeCreated: 1514608855
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player1230_0
+    21300002: player1230_1
+    21300004: player1230_2
+    21300006: player1230_3
+    21300008: player1230_4
+    21300010: player1230_5
+    21300012: player1230_6
+    21300014: player1230_7
+    21300016: player1230_8
+    21300018: player1230_9
+    21300020: player1230_10
+    21300022: player1230_11
+    21300024: player1230_12
+    21300026: player1230_13
+    21300028: player1230_14
+    21300030: player1230_15
+    21300032: player1230_16
+    21300034: player1230_17
+    21300036: player1230_18
+    21300038: player1230_19
+    21300040: player1230_20
+    21300042: player1230_21
+    21300044: player1230_22
+    21300046: player1230_23
+    21300048: player1230_24
+    21300050: player1230_25
+    21300052: player1230_26
+    21300054: player1230_27
+    21300056: player1230_28
+    21300058: player1230_29
+    21300060: player1230_30
+    21300062: player1230_31
+    21300064: player1230_32
+    21300066: player1230_33
+    21300068: player1230_34
+    21300070: player1230_35
+    21300072: player1230_36
+    21300074: player1230_37
+    21300076: player1230_38
+    21300078: player1230_39
+    21300080: player1230_40
+    21300082: player1230_41
+    21300084: player1230_42
+    21300086: player1230_43
+    21300088: player1230_44
+    21300090: player1230_45
+    21300092: player1230_46
+    21300094: player1230_47
+    21300096: player1230_48
+    21300098: player1230_49
+    21300100: player1230_50
+    21300102: player1230_51
+    21300104: player1230_52
+    21300106: player1230_53
+    21300108: player1230_54
+    21300110: player1230_55
+    21300112: player1230_56
+    21300114: player1230_57
+    21300116: player1230_58
+    21300118: player1230_59
+    21300120: player1230_60
+    21300122: player1230_61
+    21300124: player1230_62
+    21300126: player1230_63
+    21300128: player1230_64
+    21300130: player1230_65
+    21300132: player1230_66
+    21300134: player1230_67
+    21300136: player1230_68
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player1230_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3300
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 3300
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3150
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3150
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_5
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 3150
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3000
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_8
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 3000
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2850
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2850
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2850
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2700
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_14
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2700
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2550
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2550
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_17
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2550
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2400
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_20
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2400
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2250
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_23
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2250
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2100
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_26
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2100
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1950
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_28
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1950
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1950
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1800
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1800
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_34
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1650
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_35
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1650
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_37
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1500
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_38
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1500
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_40
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1350
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_41
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1350
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_43
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1200
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_44
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1200
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1050
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_47
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1050
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_49
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 900
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_50
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 900
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_52
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 750
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_53
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 750
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 600
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_56
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 600
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_58
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 450
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_59
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 450
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_61
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 300
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_62
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 300
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_64
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 150
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_65
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 150
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_67
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player1230_68
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 230
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

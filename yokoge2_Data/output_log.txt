@@ -1,0 +1,137 @@
+Mono path[0] = 'C:/Users/Bidoumyouou/Documents/Git/YokoGe/yokoge2_Data/Managed'
+Mono path[1] = 'C:/Users/Bidoumyouou/Documents/Git/YokoGe/yokoge2_Data/Mono'
+Mono config path = 'C:/Users/Bidoumyouou/Documents/Git/YokoGe/yokoge2_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Bidoumyouou/Documents/Git/YokoGe/yokoge2_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55179
+Multi-casting "[IP] 192.168.0.15 [Port] 55179 [Flags] 3 [Guid] 2155656717 [EditorId] 1497014238 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-E30INGD) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [0.0.0.0:55179]...
+PlayerConnection accepted from [192.168.0.15] handle:0x3c4
+Started listening to [0.0.0.0:55179]
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56717
+PlayerConnection already initialized - listening to [0.0.0.0:55179]
+Player data archive not found at `C:/Users/Bidoumyouou/Documents/Git/YokoGe/yokoge2_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   NVIDIA
+    VRAM:     2016 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.135 seconds
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Bidoumyouou\Documents\Git\YokoGe\yokoge2_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 59Hz; virtual: 3040x1050 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'ScriptTester') is missing!
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1743)
+
+UnloadTime: 1.082590 ms
+The AnimationClip 'CharaAnime' used by the Animation component 'TestPlayer' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+The AnimationClip 'Player_Jump' used by the Animation component 'TestPlayer' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+The AnimationClip 'Player_Attack' used by the Animation component 'TestPlayer' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+The AnimationClip 'Player_Zyaku2' used by the Animation component 'TestPlayer' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at TestEnemy.Start () [0x0001c] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestEnemy.cs:37 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/TestEnemy.cs Line: 37)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at TestEnemy.Start () [0x0001c] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestEnemy.cs:37 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/TestEnemy.cs Line: 37)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at TestEnemy.Start () [0x0001c] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestEnemy.cs:37 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/TestEnemy.cs Line: 37)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at P_Zyaku1.Update () [0x00043] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\Player\Mode\P_Zyaku1.cs:38 
+  at TestPlayer.Update () [0x00013] in C:\Users\Bidoumyouou\Documents\Git\YokoGe\Assets\Script\Charactor\TestPlayer.cs:74 
+ 
+(Filename: C:/Users/Bidoumyouou/Documents/Git/YokoGe/Assets/Script/Charactor/Player/Mode/P_Zyaku1.cs Line: 38)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 7080 -> priority: 1 
+  Thread -> id: 7364 -> priority: 1 
+  Thread -> id: 72a8 -> priority: 1 
+  Thread -> id: 7328 -> priority: 1 
+Waiting for finish
