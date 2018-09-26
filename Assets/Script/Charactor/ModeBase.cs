@@ -4,6 +4,8 @@ using System;
 
 public class ModeBase : ScriptableObject
 {
+    public GameObject Effect;//エフェクト
+
     protected bool ishitbox;//自身がhitboxを作成したか否か
     [HideInInspector] public Charactor obj;
     protected GameMgr gameMgr;
@@ -25,11 +27,19 @@ public class ModeBase : ScriptableObject
     public ChangeMode_Adapter[] ChangeMode_Eq;
     public ModeFlag flag;
 
+
     public virtual void Mode_Start(Charactor _obj)
     {
         _obj.modetime = 0.0f;
         //このモードのflagをcharaにコピーする
         _obj.nowflag = flag;
+        //エフェクトの呼び出し
+        AwakeEffect();
+        //サウンドの呼び出し
+        AwakeSound();
+
+
+
     }
     public virtual void Mode_Update(Charactor _obj)
     {
@@ -83,4 +93,25 @@ public class ModeBase : ScriptableObject
             }
         }
     }
+
+    //モードの開始時にサウンドを呼び出す
+    public void AwakeSound()
+    {
+        
+    }
+
+    //モードの開始時にエフェクトを呼び出す
+
+    public void AwakeEffect()
+    {
+        if (Effect != null)
+        {
+            GameObject p = Instantiate(Effect);
+            p.transform.position = obj.transform.position;
+            //向きをプレイヤーに合わせる
+            p.IsRight =  obj.IsRight;
+        }
+    }
+
+   
 }

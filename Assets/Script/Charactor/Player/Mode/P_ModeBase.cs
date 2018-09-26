@@ -6,6 +6,8 @@ using UnityEngine;
 public class P_ModeBase : ModeBase
 {
 
+    
+
     //ChangeMode_Eqition
 
     [SerializeField] public List<string> targetkeylist; 

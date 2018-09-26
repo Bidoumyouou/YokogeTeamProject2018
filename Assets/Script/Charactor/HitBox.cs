@@ -7,6 +7,8 @@ public class HitBox : MonoBehaviour
     public AttackStatus status;
     Damege damege;//ダメージ特性がついていればさがして当てはめる
 
+
+
     [HideInInspector]public bool IsHit = false;//攻撃が当たったか
     [HideInInspector]public Collider2D hit_col;
     Charactor chara;
