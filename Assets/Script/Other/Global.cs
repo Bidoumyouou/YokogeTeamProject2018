@@ -4,6 +4,8 @@ using System;
 
 //所謂グローバル変数置き場
 
+
+
 public enum PlayerMode {
     P_Default = 0,
     P_Zyaku1  = 3,

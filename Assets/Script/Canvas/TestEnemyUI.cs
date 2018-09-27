@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TestEnemyUI : MonoBehaviour
 {
-    [HideInInspector]public GameObject chara;
+    [HideInInspector]public GameObject TargetObject;
     Charactor chara_cmp;
     private Transform targetTfm;
 
@@ -13,10 +13,11 @@ public class TestEnemyUI : MonoBehaviour
     private Text targetText;
     void Start()
     {
-        targetTfm = chara.transform;
-        chara_cmp = chara.GetComponent<Charactor>();
+        targetTfm = TargetObject.transform;
+        chara_cmp = TargetObject.GetComponent<Charactor>();
         myRectTfm = GetComponent<RectTransform>();
-        targetText = GetComponent<Text>();
+        //targetText = GetComponent<Text>();
+
     }
 
     void Update()
@@ -27,10 +28,10 @@ public class TestEnemyUI : MonoBehaviour
         }
         if (chara_cmp != null)
         {
-            targetText.text = chara_cmp.status.HP.ToString();
+            //targetText.text = chara_cmp.status.HP.ToString();
         }
         //何故か順番が関係あるらしい↓
-        if (chara == null)
+        if (TargetObject == null)
         {
             Destroy(this.gameObject);
         }

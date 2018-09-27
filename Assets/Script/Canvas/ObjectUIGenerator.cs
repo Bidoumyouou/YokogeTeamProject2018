@@ -42,7 +42,7 @@ public class ObjectUIGenerator : MonoBehaviour
             tmp_obj = GameObject.Instantiate(TestEnemyUI_Prefab);
             tmp_obj.transform.parent = Canvas.transform;
             tmp = tmp_obj.GetComponent<TestEnemyUI>();
-            tmp.chara = p;
+            tmp.TargetObject = p;
         }
     }
 }

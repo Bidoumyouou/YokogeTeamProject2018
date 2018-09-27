@@ -22,8 +22,8 @@ public class TestEnemy : Charactor
 
     public E_ModeParam ModeParam;
     public string Modename;
-
- 
+    //エネミーUIの作成
+    public GameObject EnemyUI;
     
     //不要？bool clashflag = false;
     // Use this for initialization
@@ -45,7 +45,8 @@ public class TestEnemy : Charactor
 
     }
 
-    protected void Start()
+    //派生クラスのスタートから呼び出される
+    public void StartEnemy()
     {
         tag = E_Tag.Enemy;
         ParentStart();
@@ -54,7 +55,31 @@ public class TestEnemy : Charactor
         animator = GetComponent<Animator>();
         BaseScale_x = transform.lossyScale.x;//;//エネミーの元々のスケールを取得
 
+        
+        //エネミーUIの作成
+        StartCoroutine("SetEnemyUI");
+        //EnemyUI = GameMgr.thisobject.EnemyUI;
+
     }
+
+    private IEnumerator SetEnemyUI()
+    {
+        yield return new WaitForSeconds(1.0f);
+        GameMgr mgr = GameMgr.thisobject;
+        EnemyUI = mgr.EnemyUI;
+        CreateEnemyUI();
+    }
+
+    void CreateEnemyUI()
+    {
+        if (!EnemyUI) return;
+        GameObject _obj = Instantiate(EnemyUI);
+        _obj.transform.parent = GameMgr.thisobject.Canvas_Ref.transform;
+        TestEnemyUI enemyui = _obj.GetComponent<TestEnemyUI>();
+        enemyui.TargetObject = this.gameObject;
+       
+    }
+
     override public void ChangeMode(int _nextno)
     {
         //もしモードが「変わっていたら」
@@ -81,6 +106,7 @@ public class TestEnemy : Charactor
     // Update is called once per frame
     protected void Update()
     {
+        
 
         //Modename = Mode.obj.name;
         IsRight = (transform.localScale.x > 0);

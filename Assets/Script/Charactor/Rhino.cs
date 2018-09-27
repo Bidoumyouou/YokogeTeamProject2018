@@ -10,7 +10,7 @@ public class Rhino : TestEnemy {
         E002_List list = new E002_List();
         list.Set();
         //ModeList = list.ModeList;
-        base.Start();
+        StartEnemy();
         ChangeMode(3);
         //突進モードと待機モードを交互に
         

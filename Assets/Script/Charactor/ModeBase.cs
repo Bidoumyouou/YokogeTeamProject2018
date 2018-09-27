@@ -14,7 +14,8 @@ public class ModeBase : ScriptableObject
     protected GameMgr gameMgr;
     protected Damege damege = new Damege();
 
-    
+    public static GameObject EnemyUI;
+
     protected void MakeHitBox(GameObject[] _hitbox_array, int _n, GameObject _Attack)//最も容易な当たり判定作成関数
     {
         ishitbox = true;

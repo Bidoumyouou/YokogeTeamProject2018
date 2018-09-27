@@ -319,17 +319,25 @@
     <Compile Include="Assets\Script\UI\Spawner_UI.cs" />
     <Compile Include="Assets\Script\UI\UICaller.cs" />
     <Compile Include="Assets\Script\Wall.cs" />
+    <Compile Include="Assets\Simple UI\Samples\IconPreview.cs" />
     <Compile Include="Assets\TestAsset\Plugin\AddComponentsToChildren.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Animation2DExample\Scripts\Example.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Scripts\Animation2D.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Scripts\Animation2DManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Simple UI\Fonts\OFL.txt" />
     <None Include="Assets\TestAsset\Plugin\Animation2D\change_log.txt" />
     <None Include="Assets\TestAsset\Plugin\Animation2D\readme.txt" />
     <None Include="Assets\TestAsset\Plugin\Movinarc\PackageUninstaller\README.txt" />
     <None Include="Assets\TestAsset\Plugin\RenameTool\Readme.txt" />
     <None Include="Assets\TestAsset\Plugin\WanzyeeStudio\Plugins\Editor\Clipboard_Lite_Editor.xml" />
+    <None Include="Assets\UIpack\Spritesheet\blueSheet.xml" />
+    <None Include="Assets\UIpack\Spritesheet\greenSheet.xml" />
+    <None Include="Assets\UIpack\Spritesheet\greySheet.xml" />
+    <None Include="Assets\UIpack\Spritesheet\redSheet.xml" />
+    <None Include="Assets\UIpack\Spritesheet\yellowSheet.xml" />
+    <None Include="Assets\UIpack\license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

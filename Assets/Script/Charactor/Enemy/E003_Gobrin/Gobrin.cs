@@ -8,7 +8,7 @@ public class Gobrin : TestEnemy
     // Use this for initialization
     void Start()
     {
-        base.Start();
+        StartEnemy();
         ChangeMode(3);
 
     }

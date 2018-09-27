@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class GameMgr : MonoBehaviour {
 
-    static GameMgr thisobject;
+    public static GameMgr thisobject;
+
     public static string NowSceneName;
     bool Scene_Reloded = false;
 
     public static TestPlayer player;
     GameObject stageMgr_obj;
     StageMgr stageMgr_cmp;
-	// Use this for initialization
-	void Start () {
+
+    public GameObject Canvas_Ref;
+
+    [HideInInspector]public GameObject EnemyUI;
+    // Use this for initialization
+    private void Awake()
+    {
+        //ResourceLoadは最速でAwakeから入る
+
+        EnemyUI = (GameObject)Resources.Load("Prefabs/UI/EnemyUI");
+
+    }
+
+    void Start () {
         stageMgr_obj = GameObject.Find("StageManager");
         stageMgr_cmp = stageMgr_obj.GetComponent<StageMgr>();
         //プレイヤーを取得する

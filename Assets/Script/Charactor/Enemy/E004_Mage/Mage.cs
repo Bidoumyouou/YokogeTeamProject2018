@@ -8,7 +8,7 @@ public class Mage : TestEnemy
     // Use this for initialization
     void Start()
     {
-        base.Start();
+        StartEnemy();
         ChangeMode(FirstMode);
 
     }
