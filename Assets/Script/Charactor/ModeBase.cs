@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System;
+using BidouLib;
 
 public class ModeBase : ScriptableObject
 {
-    public GameObject Effect;//エフェクト
+    
+    public Global.ClassWithGetter<Effect> Effect = new Global.ClassWithGetter<Effect>();
+    public GameObject Effect_obj;//エフェクト
 
     protected bool ishitbox;//自身がhitboxを作成したか否か
     [HideInInspector] public Charactor obj;
@@ -21,7 +24,7 @@ public class ModeBase : ScriptableObject
     protected int[] NextMode = new int[8];
     public int index = 0;
     public TestPlayer player;
-
+    
     public float EndTime;//モードを終了する時間
 
     public ChangeMode_Adapter[] ChangeMode_Eq;
@@ -30,6 +33,11 @@ public class ModeBase : ScriptableObject
 
     public virtual void Mode_Start(Charactor _obj)
     {
+        //エフェクトのオブジェクトセット
+        if (Effect_obj)
+        {
+            Effect.SetObject(Effect_obj);
+        }
         _obj.modetime = 0.0f;
         //このモードのflagをcharaにコピーする
         _obj.nowflag = flag;
@@ -104,12 +112,13 @@ public class ModeBase : ScriptableObject
 
     public void AwakeEffect()
     {
-        if (Effect != null)
+        if (Effect.Ins != null)
         {
-            GameObject p = Instantiate(Effect);
+            GameObject p = Instantiate(Effect.objRef);
             p.transform.position = obj.transform.position;
             //向きをプレイヤーに合わせる
-            p.IsRight =  obj.IsRight;
+            Effect e = p.GetComponent<Effect>();
+            e.IsRight = obj.IsRight;
         }
     }
 
