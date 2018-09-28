@@ -57,7 +57,7 @@ public class TestEnemy : Charactor
 
         
         //エネミーUIの作成
-        StartCoroutine("SetEnemyUI");
+        //StartCoroutine("SetEnemyUI");
         //EnemyUI = GameMgr.thisobject.EnemyUI;
 
     }
