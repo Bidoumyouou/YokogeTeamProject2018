@@ -5,11 +5,11 @@ public class E004_Move : E_ModeBase
 {
     public float dash_speed;
     //プレイヤーを探す
-    GameObject player;
+    //GameObject player;
     public override void Mode_Start(Charactor _obj)
     {
+        player = GameMgr.player;
 
-        player = GameObject.Find("TestPlayer");
         Vector3 v;
         base.Mode_Start(_obj);
         //ひとつだけプレハブから攻撃オブジェクトを作成

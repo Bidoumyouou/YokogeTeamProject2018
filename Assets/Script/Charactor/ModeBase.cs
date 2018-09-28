@@ -12,9 +12,14 @@ public class ModeBase : ScriptableObject
     protected bool ishitbox;//自身がhitboxを作成したか否か
     [HideInInspector] public Charactor obj;
     protected GameMgr gameMgr;
-    protected Damege damege = new Damege();
+    protected Damege damege; 
 
     public static GameObject EnemyUI;
+
+    private void Awake()
+    {
+        damege = new Damege();        
+    }
 
     protected void MakeHitBox(GameObject[] _hitbox_array, int _n, GameObject _Attack)//最も容易な当たり判定作成関数
     {
