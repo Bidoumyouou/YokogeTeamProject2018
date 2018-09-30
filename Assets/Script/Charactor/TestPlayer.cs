@@ -13,6 +13,11 @@ public class PlayerInputCode : System.Object{
     public string Zyaku3;
     public string Kyou1;
     public string Kyou2;
+    //特殊派生
+    public string Special1;
+    public string Special2;
+    public string Special3;
+
     //EditFlag__1 //これを各モード追加の度の巡回箇所にするのどう？
 }
 
