@@ -10,9 +10,9 @@ public class P_ModeBase : ModeBase
 
     //ChangeMode_Eqition
 
-    [SerializeField] public List<string> targetkeylist; 
+    [SerializeField] public List<string> targetkeylist;
 
-
+    public int MP = 0;
     //敵オブジェクトのコーラー(本来ここじゃないかも)
     protected ObjectCaller[] enemy_caller = new ObjectCaller[8];
     //モードフラグ

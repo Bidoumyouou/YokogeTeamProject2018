@@ -6,6 +6,7 @@ using UnityEngine;
 public class Status : System.Object {
     public bool Alive = true;
     public int HP;
+    public int MP;
     public int level;
     void ReduceHealth(int _value)
     {
@@ -22,6 +23,7 @@ public class Status : System.Object {
     public void Init()
     {
         HP = 10;
+        MP = 50;
         Alive = true;
     }
     public void CheckAll()
