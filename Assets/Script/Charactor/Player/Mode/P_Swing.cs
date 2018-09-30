@@ -26,7 +26,7 @@ public class P_Swing : P_ModeBase
         base.Mode_Update(_obj);
         if (_obj.modetime > _obj.nowflag.StartTime && !ishitbox)
         {
-            MakeHitBox(_obj.hitbox, 0, Attack[0]);
+            MakeHitBox(_obj,_obj.hitbox, 0, Attack[0]);
         }
 
 

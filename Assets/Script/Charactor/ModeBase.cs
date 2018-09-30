@@ -21,10 +21,12 @@ public class ModeBase : ScriptableObject
         damege = new Damege();        
     }
 
-    protected void MakeHitBox(GameObject[] _hitbox_array, int _n, GameObject _Attack)//最も容易な当たり判定作成関数
+    protected void MakeHitBox(Charactor _obj,GameObject[] _hitbox_array, int _n, GameObject _Attack)//最も容易な当たり判定作成関数
     {
         ishitbox = true;
         _hitbox_array[_n] = GameObject.Instantiate(_Attack, obj.transform) as GameObject;
+        //当たり判定が発生源を追従するか否か
+ 
     }
     public GameObject[] Attack = new GameObject[8];//事前に用意する攻撃オブジェクトのリスト
     protected int[] NextMode = new int[8];

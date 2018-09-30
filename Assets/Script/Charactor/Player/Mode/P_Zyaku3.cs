@@ -24,7 +24,7 @@ public class P_Zyaku3 : P_ModeBase
         ////////////////////////
         if (_obj.modetime > _obj.nowflag.StartTime && !ishitbox)
         {
-            MakeHitBox(_obj.hitbox, 0, Attack[0]);
+            MakeHitBox(_obj, _obj.hitbox, 0, Attack[0]);
         }
         
  
