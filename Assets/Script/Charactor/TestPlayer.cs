@@ -41,6 +41,8 @@ public class TestPlayer : Charactor {
     [HideInInspector]public Vector2 Move_Vec_Norm;
     public float Move_Dest;//目標までの距離
 
+    public P_ModeBase[] SpecialActionList;
+
     void Start () {
         tag = E_Tag.Player;
         ParentStart();
@@ -61,7 +63,19 @@ public class TestPlayer : Charactor {
 
 
     }
+
+
     override public void ChangeMode(int _nextno){
+        //エイリアスが設定されているモードは変換する
+        if (_nextno == 101)
+            _nextno = SpecialActionList[0].index;
+        if (_nextno == 102)
+            _nextno = SpecialActionList[1].index;
+        if (_nextno == 103)
+            _nextno = SpecialActionList[2].index;
+
+
+
         //もしモードが「変わっていたら」
         if (modeindex != _nextno)
         {

@@ -5,10 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokogeTeamProject2018", "Yo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokogeTeamProject2018.Editor", "YokogeTeamProject2018.Editor.csproj", "{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokogeTeamProject2018.Editor", "YokogeTeamProject2018.Editor.csproj", "{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YokogeTeamProject2018.Editor", "YokogeTeamProject2018.Editor.csproj", "{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{6D49D99A-8C83-1864-CFFC-55749B74F3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D49D99A-8C83-1864-CFFC-55749B74F3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D49D99A-8C83-1864-CFFC-55749B74F3EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D8423AB-3A63-7796-DBF1-9D1A134DAA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
