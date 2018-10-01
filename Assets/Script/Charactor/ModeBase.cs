@@ -36,6 +36,8 @@ public class ModeBase : ScriptableObject
     public float EndTime;//モードを終了する時間
 
     public ChangeMode_Adapter[] ChangeMode_Eq;
+    public EqitionPack[] equitionpack;
+
     public ModeFlag flag;
 
 
@@ -106,6 +108,23 @@ public class ModeBase : ScriptableObject
                         _obj.ChangeMode(p.TargetMode.index);
                 }
                 return;
+            }
+        }
+        //全てのEqitionPackについても↑と同様に周回してチェックする
+        foreach (EqitionPack e in equitionpack)
+        {
+            foreach (ChangeMode_Adapter p in e.GetChangeMode_Eq)
+            {
+                if (p.IsAllEqition(_obj, this))
+                {
+                    if (p.TargetMode != null)
+                    {
+                        //変更先のモードとこのモードが異なるなら
+                        if (this.index != p.TargetMode.index)
+                            _obj.ChangeMode(p.TargetMode.index);
+                    }
+                    return;
+                }
             }
         }
     }
