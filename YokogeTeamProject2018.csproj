@@ -388,6 +388,7 @@
     <Compile Include="Assets\Script\StageMgr.cs" />
     <Compile Include="Assets\Script\Text\Text1.cs" />
     <Compile Include="Assets\Script\UI\Spawner_UI.cs" />
+    <Compile Include="Assets\Script\UI\TextBehavior.cs" />
     <Compile Include="Assets\Script\UI\UICaller.cs" />
     <Compile Include="Assets\Script\Wall.cs" />
     <Compile Include="Assets\Simple UI\Samples\IconPreview.cs" />
