@@ -52,4 +52,10 @@ static public class PlayerCommonAction
             return;
         }
     }
+
+    static public void Turn(Charactor _obj)
+    {
+        _obj.IsRight = !_obj.IsRight;
+        _obj.transform.localScale = new Vector3(-1 * _obj.transform.localScale.x, _obj.transform.localScale.y, _obj.transform.localScale.z);
+    }
 }

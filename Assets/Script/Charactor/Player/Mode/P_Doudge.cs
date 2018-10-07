@@ -1,19 +1,34 @@
 ﻿using UnityEngine;
 
 
+public class P_DoudgeParam : P_ModeParamBase {
+    public float Doudge_tmp = 0.0f;
+    public bool TrunFinish = false;
+}
+
+
 public class P_Doudge : P_ModeBase
 {
-    [Tooltip("無敵開始時間")]public float Muteki_Start;
+    //モードに持たせられないモード固有のパラメータを記録するメンバ
+    
+
+
+    [Tooltip("無敵開始時間")] public float Muteki_Start;
     [Tooltip("無敵終了時間")] public float Muteki_End;
 
     public float MoveStart;
     public float MoveSpeed;
     public float Doudge_Length;//回避の距離
-    float Doudge_tmp = 0.0f;//現在の移動量
+ 
     Vector2 Vector = new Vector2();
+
+
+
     public override void Mode_Start(Charactor _obj)
     {
-        Doudge_tmp = 0.0f;
+        Modeparam = new P_DoudgeParam();
+
+        Modeparam.Doudge_tmp = 0.0f;
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(7);
         base.Mode_Start(_obj);
@@ -47,7 +62,7 @@ public class P_Doudge : P_ModeBase
         //移動
         if (_obj.modetime > MoveStart)
         {
-            D_Move();
+            D_Move(_obj);
         }
         //フレームによってMutekiをいじる
         if(_obj.modetime > Muteki_Start)
@@ -61,15 +76,21 @@ public class P_Doudge : P_ModeBase
             _obj.nowflag.IsAbleToBeClashed = true;
         }
     }
-    void D_Move()
+    void D_Move(Charactor _obj)
     {
-        if (Doudge_tmp > Doudge_Length)
+        if (Modeparam.Doudge_tmp > Doudge_Length)
         {
+            if (!Modeparam.TrunFinish)
+            {
+                Modeparam.TrunFinish = true;
+                PlayerCommonAction.Turn(_obj);
+            }
             return;
         }
         
         obj.transform.Translate(Time.deltaTime * Vector * MoveSpeed);
-        Doudge_tmp += Time.deltaTime * MoveSpeed;
+        Modeparam.Doudge_tmp += Time.deltaTime * MoveSpeed;
         //規定量まで移動していたら
     }
+
 }

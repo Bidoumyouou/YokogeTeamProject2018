@@ -22,6 +22,8 @@ public class PlayerInputCode : System.Object{
 }
 
 
+
+
 //*
 /*
  * システム処理に必須なメンバは上、ゲームの機能はしたなどキレイにかけ
