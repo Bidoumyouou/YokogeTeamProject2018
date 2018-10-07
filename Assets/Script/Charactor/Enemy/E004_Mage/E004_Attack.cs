@@ -20,20 +20,26 @@ public class E004_Attack : E_ModeBase
 
     public override void Mode_Update(Charactor _obj)
     {
+        //メイジモードによって分岐
+
         AttackTimer += Time.deltaTime;
         //_obj.Move(dash_speed);
         base.Mode_Update(_obj);
         //一定時刻になったら当たり判定を作成
         if (AttackTimer > AttackTime)
         {
+
+
             Mage mage = _obj.GetComponent<Mage>();
             AttackTimer = 0;
-            Vector3 v;
-            //オフセットと向きを考慮したposに当たり判定を生成
-            if (!_obj.IsRight) { v = new Vector3(attack_offset.x * -1, attack_offset.y, attack_offset.z); } else { v = attack_offset; }
-            _obj.hitbox[0] = GameObject.Instantiate(Attack[0],_obj.transform.position + v, Quaternion.identity) as GameObject;
-            //_obj.hitbox[0].transform.SetParent(_obj.transform,true);
-            //_obj.hitbox[0].transform.localScale = 1 / _obj.transform.localScale;
+
+            if (mage != null)
+            {
+                if (mage.mage_mode == Mage_Mode.NormalShot)
+                    NormalShot(mage);
+                if (mage.mage_mode == Mage_Mode.TargetShot)
+                    TrackShot(mage);
+            }
             mage.IsAttacked = true;
         }
 
@@ -41,4 +47,27 @@ public class E004_Attack : E_ModeBase
 
     }
 
+
+    void NormalShot(Mage m)
+    {
+        AttackTimer = 0;
+        Vector3 v;
+        //オフセットと向きを考慮したposに当たり判定を生成
+        if (!m.IsRight) { v = new Vector3(attack_offset.x * -1, attack_offset.y, attack_offset.z); } else { v = attack_offset; }
+        m.hitbox[0] = GameObject.Instantiate(Attack[0], m.transform.position + v, Quaternion.identity) as GameObject;
+   
+
+    }
+
+    void TrackShot(Mage m)
+    {
+        Vector2 target_vec = GameMgr.player.transform.position - m.transform.position;
+        target_vec.Normalize();
+        Vector3 v;
+        if (!m.IsRight) { v = new Vector3(attack_offset.x * -1, attack_offset.y, attack_offset.z); } else { v = attack_offset; }
+
+        m.hitbox[0] = GameObject.Instantiate(Attack[0], m.transform.position + v, Quaternion.identity) as GameObject;
+        HitBox_Move p = m.hitbox[0].GetComponent<HitBox_Move>();
+        p.vector = target_vec;
+    }
 }
