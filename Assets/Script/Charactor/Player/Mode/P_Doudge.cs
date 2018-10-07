@@ -42,14 +42,7 @@ public class P_Doudge : P_ModeBase
         {
             Vector.Set(-1.0f, 0.0f);
         }
-        ////////////////////////
-        //以上、全アクション共通
-        ////////////////////////
-        //base.damege.Set(0, 25, 250, new Vector2(1, 1));
-        //プレハブから直接攻撃判定を取ってくる
-        Attack[0] = (GameObject)Resources.Load("HitBoxAttack");
-        //GameMgrから取ってくる
-        //Attack[0] = base.gameMgr.Attack[0];
+ 
 
     }
     public override void Mode_Update(Charactor _obj)

@@ -23,8 +23,8 @@ public class E005_Default : E_ModeBase
             if (nest.spawned_n < nest.param.maxspawn)
             {
                 GameObject e;
-                e = GameObject.Instantiate(nest.param.SpawnEnemyPrefab);
-                e.transform.position = _obj.transform.position;
+                e = Instantiate(nest.param.SpawnEnemyPrefab) as GameObject;
+                e.transform.position = _obj.gameObject.transform.position;
             }
             nest.spawned_n++;
         }

@@ -10,9 +10,17 @@ public class TestEnemyUI : MonoBehaviour
     RectTransform myRectTfm;
     public Vector3 pos_offset;
 
+    //α値変更用のやつ
+    Image[] sprite;
+
     private Text targetText;
     void Start()
     {
+        sprite = GetComponentsInChildren<Image>();
+        foreach (Image s in sprite)
+        {
+            s.color = new Color(1, 1, 1, 0);
+        }
         targetTfm = TargetObject.transform;
         chara_cmp = TargetObject.GetComponent<Charactor>();
         myRectTfm = GetComponent<RectTransform>();
@@ -25,6 +33,13 @@ public class TestEnemyUI : MonoBehaviour
         if (targetTfm != null)
         {
             myRectTfm.position = RectTransformUtility.WorldToScreenPoint(Camera.main, targetTfm.position + pos_offset);
+            //移動させてから非表示を解除
+            foreach (Image s in sprite)
+            {
+                s.color = new Color(1, 1, 1, 1);
+            }
+
+
         }
         if (chara_cmp != null)
         {
