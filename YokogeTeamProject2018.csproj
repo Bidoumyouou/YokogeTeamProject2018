@@ -312,6 +312,7 @@
     <Compile Include="Assets\Script\Charactor\Enemy\E004_Mage\E004_Move.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E004_Mage\Mage.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E005_Nest\E005_Default.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\E005_Nest\E005_Wait.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E005_Nest\EnemyNest.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\ChangeMode_Adapter.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\EndAnimation.cs" />
@@ -383,6 +384,8 @@
     <Compile Include="Assets\Script\Object\RespawnPoint.cs" />
     <Compile Include="Assets\Script\Object\Spawner.cs" />
     <Compile Include="Assets\Script\ObjectCaller.cs" />
+    <Compile Include="Assets\Script\Other\CameraControl.cs" />
+    <Compile Include="Assets\Script\Other\CameraLockTrigger.cs" />
     <Compile Include="Assets\Script\Other\Effect.cs" />
     <Compile Include="Assets\Script\Other\Global.cs" />
     <Compile Include="Assets\Script\Other\StageManager.cs" />

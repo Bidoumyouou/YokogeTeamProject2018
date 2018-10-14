@@ -37,7 +37,7 @@ public class TestPlayer : Charactor {
     [HideInInspector]public PlayerStatus P_status;
     //TestPlayerMode Mode;
     public P_ModeBase[] ModeList;
-
+    public CameraControl camera;
     public float Move_Speed;//移動する速度(向きで補正)
     public Vector2 Move_Vec;//移動先のベクトル(自動的に正規化)
     [HideInInspector]public Vector2 Move_Vec_Norm;

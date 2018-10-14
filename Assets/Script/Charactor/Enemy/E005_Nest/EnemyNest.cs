@@ -15,13 +15,21 @@ public class EnemyNest : TestEnemy
     public int spawned_n = 0;
     public NestParameter param;
     //ネストの基本ステータス
-
+    public GameObject CameraLockTrigger;
 
     // Use this for initialization
     void Start()
     {
         StartEnemy();
-        ChangeMode(FirstMode);
+        if (CameraLockTrigger == null)
+        {
+            //カメラロックトリガがついていなければ
+            ChangeMode(FirstMode);
+        }
+        else
+        {
+            ChangeMode(3);
+        }
     }
 
     // Update is called once per frame
@@ -29,5 +37,16 @@ public class EnemyNest : TestEnemy
     {
         base.Update();
 
+    }
+
+    //消えた時にカメラを解除する
+    ~EnemyNest()
+    {
+        if(CameraLockTrigger != null)
+        {
+            CameraLockTrigger cameras = CameraLockTrigger.GetComponent<CameraLockTrigger>();
+            cameras.EndCameraLock();
+            GameObject.Destroy(CameraLockTrigger);
+        }
     }
 }
