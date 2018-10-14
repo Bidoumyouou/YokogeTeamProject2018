@@ -7,9 +7,7 @@ public class CameraControl : MonoBehaviour {
     public Transform PlayerTransform;
 
     [HideInInspector]public Transform TargetCameraPoint;
-    [HideInInspector]public int mode = 0;/// <summary>
-    /// 0は追尾,1は固定
-    /// </summary>
+    public int mode = 0;
 	// Use this for initialization
 	void Start () {
 	}

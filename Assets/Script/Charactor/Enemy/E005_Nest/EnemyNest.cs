@@ -40,7 +40,7 @@ public class EnemyNest : TestEnemy
     }
 
     //消えた時にカメラを解除する
-    ~EnemyNest()
+    void OnDestroy()
     {
         if(CameraLockTrigger != null)
         {

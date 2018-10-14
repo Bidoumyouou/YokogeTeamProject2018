@@ -27,6 +27,7 @@ public class CameraLockTrigger : MonoBehaviour
                 camera = collision.gameObject.GetComponent<TestPlayer>().camera;
                 valid = true;
                 camera.mode = 1;
+                camera.TargetCameraPoint = CameraPoint;
             }
         }
     }
