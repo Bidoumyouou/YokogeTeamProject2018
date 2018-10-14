@@ -14,6 +14,7 @@ Yokoge2018.csproj
 Yokoge2018.Editor.csproj
 Temp/__Backupscenes/0.backup
 *.backup
+Temp/
 Temp/UnityLockfile
 Temp/UnityTempFile-0fb1b08f26dfd334380d9b49be166407
 Temp/UnityTempFile-145ef607375f2e84f949566b9deab6c0
