@@ -7,6 +7,18 @@ namespace BidouLib
     
     public static class Global
     {
+        //bool型を1or-1に変換する
+        public static int BoolToSign(bool _b)
+        {
+            if (_b) {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
         //地点Aから地点Bまで一定の速度で動く関数。
         public class MyMove2D {
             public float moveratio = 0;//移動の遂行率
