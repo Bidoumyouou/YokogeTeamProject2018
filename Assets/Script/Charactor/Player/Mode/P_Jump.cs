@@ -6,6 +6,7 @@ public class P_Jump : P_ModeBase
     public Sprite spriteA;
     public Sprite JumpSprite;
 
+    bool isfall = false;
     // Use this for initialization
     public override void Mode_Start(Charactor _obj)
     {
@@ -20,7 +21,7 @@ public class P_Jump : P_ModeBase
         ////////////////////////
         NextMode[0] = 1;
         _obj.rigidbody2d.AddForce(new Vector3(0, _p.P_status.jumpheight, 0));
-
+        isfall = false;
     }
     public override void Mode_Update(Charactor _obj)
     {
@@ -33,9 +34,10 @@ public class P_Jump : P_ModeBase
         PlayerCommonAction.MoveAirial(player);
 
         //落下アニメへの切り替え
-        if(_obj.rigidbody2d.velocity.y < 0)
+        if(_obj.rigidbody2d.velocity.y < 0 && isfall == false)
         {
             //_obj.GetComponent<SpriteRenderer>().sprite = JumpSprite;
+            isfall = true;
             _obj.animator.SetTrigger("JumpFall");
         }
         

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+using BidouLib;
 //プレイヤーの基本的なアクション(ジャンプ、移動などの管理クラス)
 static public class PlayerCommonAction 
 {
@@ -32,12 +32,16 @@ static public class PlayerCommonAction
     }
     static public void MoveAirial(TestPlayer _player)
     {
+        _player.transform.localScale = new Vector3(System.Math.Abs(_player.transform.localScale.x) * Global.BoolToSign(_player.IsRight), _player.transform.localScale.y, _player.transform.localScale.z);
+
+        //ここではLocalScaleはIsRightに依存
         if (Input.GetKey(KeyCode.RightArrow))
         {
             _player.transform.Translate(new Vector3(_player.P_status.walkspeed, 0, 0));
+            _player.IsRight = true;
             if (!_player.IsRight)
             {
-                _player.transform.localScale = new Vector3(_player.transform.localScale.x * -1, _player.transform.localScale.y, _player.transform.localScale.z);
+ //               _player.transform.localScale = new Vector3(_player.transform.localScale.x * -1, _player.transform.localScale.y, _player.transform.localScale.z);
             }
             return;
         }
@@ -47,10 +51,12 @@ static public class PlayerCommonAction
             _player.transform.Translate(new Vector3(-_player.P_status.walkspeed, 0, 0));
             if (_player.IsRight)
             {
-                _player.transform.localScale = new Vector3(_player.transform.localScale.x * -1, _player.transform.localScale.y, _player.transform.localScale.z);
+//                _player.transform.localScale = new Vector3(_player.transform.localScale.x * -1, _player.transform.localScale.y, _player.transform.localScale.z);
             }
+            _player.IsRight = false;
             return;
         }
+
     }
 
     static public void Turn(Charactor _obj)
