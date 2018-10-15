@@ -3,6 +3,8 @@ using System.Collections;
 
 public class P_Jump : P_ModeBase
 {
+    public Sprite spriteA;
+    public Sprite JumpSprite;
 
     // Use this for initialization
     public override void Mode_Start(Charactor _obj)
@@ -23,10 +25,19 @@ public class P_Jump : P_ModeBase
     public override void Mode_Update(Charactor _obj)
     {
 
+
+
         base.Mode_Update(_obj);
  
         //空中の左右移動
         PlayerCommonAction.MoveAirial(player);
+
+        //落下アニメへの切り替え
+        if(_obj.rigidbody2d.velocity.y < 0)
+        {
+            //_obj.GetComponent<SpriteRenderer>().sprite = JumpSprite;
+            _obj.animator.SetTrigger("JumpFall");
+        }
         
      }
 }
