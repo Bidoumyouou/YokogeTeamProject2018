@@ -42,11 +42,21 @@ public class Charactor : MonoBehaviour
         caller = GetComponent<ObjectCaller>();
     }
 
+
+    [HideInInspector]public float tmp_velocity;
     // Update is called once per frame
     protected void ParentUpdate()
     {
         modetime += Time.deltaTime;
         clash.Action(this.transform, this.caller);
+        //RigidBotyからvelocityを記録
+
+    }
+
+    private void LateUpdate()
+    {
+        tmp_velocity = GetComponent<Rigidbody2D>().velocity.y;
+
     }
 
     //colが攻撃判定ならキャラがダメージを受けるための処理

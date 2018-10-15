@@ -101,9 +101,10 @@ public class TestPlayer : Charactor {
 
     }
     //接地しているか否か(実際の作業の場合はタグ付けしたものと足が接触しているかで判断)
+    //↑直前のvelocityを記録して比較することで検出する仕様で実装
     public bool IsGround()
     {
-        if (System.Math.Abs(rigidbody2d.velocity.y) <= 0.00)
+        if (System.Math.Abs(rigidbody2d.velocity.y) == 0.00 && tmp_velocity <= 0.00)
         {
             return true;
 
