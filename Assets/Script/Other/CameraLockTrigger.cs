@@ -36,6 +36,6 @@ public class CameraLockTrigger : MonoBehaviour
     {
         valid = false;
         if (camera != null)
-            camera.ChangeMode(0);
+            camera.ChangeModeWithMove(0,this.transform.position,camera.PlayerTransform.position);
     }
 }
