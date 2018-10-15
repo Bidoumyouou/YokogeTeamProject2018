@@ -26,7 +26,7 @@ public class CameraLockTrigger : MonoBehaviour
             {
                 camera = collision.gameObject.GetComponent<TestPlayer>().camera;
                 valid = true;
-                camera.mode = 1;
+                camera.ChangeModeWithMove(1,camera.transform.position,this.transform.position);
                 camera.TargetCameraPoint = CameraPoint;
             }
         }
@@ -35,7 +35,7 @@ public class CameraLockTrigger : MonoBehaviour
     public void EndCameraLock()
     {
         valid = false;
-        if(camera != null)
-            camera.mode = 0;
+        if (camera != null)
+            camera.ChangeMode(0);
     }
 }
