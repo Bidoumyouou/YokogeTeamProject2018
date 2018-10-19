@@ -353,6 +353,7 @@
     <Compile Include="C:\Users\Bidoumyouou\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.standardevents@1.0.13\Editor\Importer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resources\Shader\UI-AlphaMask.shader" />
     <None Include="Assets\Simple UI\Fonts\OFL.txt" />
     <None Include="Assets\TestAsset\Plugin\Animation2D\change_log.txt" />
     <None Include="Assets\TestAsset\Plugin\Animation2D\readme.txt" />

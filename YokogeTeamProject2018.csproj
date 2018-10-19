@@ -299,6 +299,7 @@
     <Compile Include="Assets\PlayerAnime.cs" />
     <Compile Include="Assets\Script\Bidou_Global.cs" />
     <Compile Include="Assets\Script\Button.cs" />
+    <Compile Include="Assets\Script\Canvas\CuiInObject.cs" />
     <Compile Include="Assets\Script\Canvas\ObjectUIGenerator.cs" />
     <Compile Include="Assets\Script\Canvas\TestEnemyUI.cs" />
     <Compile Include="Assets\Script\Charactor\Charactor.cs" />
@@ -401,8 +402,10 @@
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Animation2DExample\Scripts\Example.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Scripts\Animation2D.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Scripts\Animation2DManager.cs" />
+    <Compile Include="Assets\UI-AlphaMask\UIImageAlphaMask.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resources\Shader\UI-AlphaMask.shader" />
     <None Include="Assets\Simple UI\Fonts\OFL.txt" />
     <None Include="Assets\TestAsset\Plugin\Animation2D\change_log.txt" />
     <None Include="Assets\TestAsset\Plugin\Animation2D\readme.txt" />
