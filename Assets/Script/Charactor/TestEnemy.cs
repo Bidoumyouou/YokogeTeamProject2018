@@ -50,7 +50,14 @@ public class TestEnemy : Charactor
     {
         tag = E_Tag.Enemy;
         ParentStart();
-        Mode = ModeList[0];
+        if (ModeList.Length > FirstMode)
+        {
+            Mode = ModeList[FirstMode];
+        }
+        else
+        {
+            Mode = ModeList[0];
+        }
         Mode.Mode_Start(this);
         animator = GetComponent<Animator>();
         BaseScale_x = transform.lossyScale.x;//;//エネミーの元々のスケールを取得

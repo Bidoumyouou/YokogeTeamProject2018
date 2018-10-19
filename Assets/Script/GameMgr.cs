@@ -9,6 +9,7 @@ public class GameMgr : MonoBehaviour {
     public static string NowSceneName;
     bool Scene_Reloded = false;
 
+
     public static TestPlayer player;
     GameObject stageMgr_obj;
     StageMgr stageMgr_cmp;

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
-
+using BidouLib;
 
 public class P_Zyaku2 : P_ModeBase
 {
+    public float Move_Speed = 2.0f;//前に繰り出す速度
 
-    public int test;//祖父オブジェクトがMonoBehaviorを継承していてもインスペクタでは表示されない
+    Vector2 tmp_pos;
+    Vector2 tmp_targetpos;
     public override void Mode_Start(Charactor _obj)
     {
         TestPlayer _p = _obj.GetComponent<TestPlayer>();
@@ -17,19 +19,18 @@ public class P_Zyaku2 : P_ModeBase
         //ひとつだけプレハブから攻撃オブジェクトを作成
         //GameObject Enemy
         _p.Move_Dest = _p.Move_Vec.magnitude;//ベクトルの長さを取る
-
+        tmp_pos = _obj.transform.position;
+        tmp_targetpos = new Vector2(tmp_pos.x + _p.Move_Dest * Global.BoolToSign(_p.IsRight),tmp_pos.y);
     }
     public override void Mode_Update(Charactor _obj)
     {
         base.Mode_Update(_obj);
-        if (_obj.modetime > _obj.nowflag.StartTime && !ishitbox)
-        {
-            MakeHitBox(_obj, _obj.hitbox, 0, Attack[0]);
-        }
 
         ////////////////////////
         //以上、全アクション共通
         ////////////////////////
+        Global.MyMove2D m = Global.MyMove2D.Move(_obj.transform, tmp_pos, tmp_targetpos, Move_Speed);
+
         TestPlayer _p = _obj.GetComponent<TestPlayer>();
         //少し前に出る
         if (_p.Move_Dest > 0)
@@ -45,12 +46,7 @@ public class P_Zyaku2 : P_ModeBase
  
         }
        
-        //時間経過で元に戻る
-        if (_obj.modetime > _obj.nowflag.EndTime)
-        {
-            _obj.ChangeMode(0);
 
-        }
     }
 
 }

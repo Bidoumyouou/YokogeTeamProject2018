@@ -14,6 +14,7 @@ Yokoge2018.csproj
 Yokoge2018.Editor.csproj
 Temp/__Backupscenes/0.backup
 *.backup
+Temp/
 Temp/UnityLockfile
 Temp/UnityTempFile-0fb1b08f26dfd334380d9b49be166407
 Temp/UnityTempFile-145ef607375f2e84f949566b9deab6c0
@@ -292,3 +293,6 @@ Temp/UnityVS_bin/Debug/UnityEngine.XRModule.xml
 Temp/UnityVS_bin/Debug/UnityScript.dll
 Temp/UnityVS_bin/Debug/UnityScript.Lang.dll
 YokogeTeamProject2018.sln
+Temp/UnityTempFile-ed2f4489bbec5024f9b444adc54632ed
+Temp/UnityTempFile-01626499813edd8498443ec400c8fbe5
+YokogeTeamProject2018.csproj

@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class P_ModeParamBase {
+    public int test;
+}
+
 
 public class P_ModeBase : ModeBase
 {
 
-    
-
+    protected P_DoudgeParam Modeparam;
     //ChangeMode_Eqition
 
     [SerializeField] public List<string> targetkeylist;
@@ -17,6 +20,7 @@ public class P_ModeBase : ModeBase
     protected ObjectCaller[] enemy_caller = new ObjectCaller[8];
     //モードフラグ
     
+
     public override void Mode_Start(Charactor _obj)
     {
         ishitbox = false;
