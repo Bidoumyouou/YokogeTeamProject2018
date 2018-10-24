@@ -11,7 +11,7 @@ public class P_Swing : P_ModeBase
     public override void Mode_Start(Charactor _obj)
     {
         //MPの減少
-        _obj.status.MP -= 10;
+
 
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(14);

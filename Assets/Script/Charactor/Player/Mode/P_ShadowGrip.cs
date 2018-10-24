@@ -8,7 +8,7 @@ public class P_ShadowGrip : P_ModeBase
 
     public override void Mode_Start(Charactor _obj)
     {
-        _obj.status.MP -= 10;
+
 
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(15);

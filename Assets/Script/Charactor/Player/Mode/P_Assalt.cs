@@ -14,7 +14,7 @@ public class P_Assalt: P_ModeBase
 
     public override void Mode_Start(Charactor _obj)
     {
-        _obj.status.MP -= 10;
+
 
         Doudge_tmp = 0.0f;
         //アニメシグナルの呼び出し

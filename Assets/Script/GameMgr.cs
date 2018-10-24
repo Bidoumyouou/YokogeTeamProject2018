@@ -18,11 +18,14 @@ public class GameMgr : MonoBehaviour {
 
     [HideInInspector]public GameObject EnemyUI;
     // Use this for initialization
+
+    [Tooltip("全ての初期化したいモードはここに入れる")]public ModeBase[] AllMode;
     private void Awake()
     {
         //ResourceLoadは最速でAwakeから入る
 
         EnemyUI = (GameObject)Resources.Load("Prefabs/UI/EnemyUI");
+        //全てのモードの初期化
 
     }
 

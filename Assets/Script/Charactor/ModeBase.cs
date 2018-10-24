@@ -55,7 +55,19 @@ public class ModeBase : ScriptableObject
         AwakeEffect();
         //サウンドの呼び出し
         AwakeSound();
+        //Equitionの初期化
 
+        foreach(ChangeMode_Adapter a in ChangeMode_Eq)
+        {
+            a.Init();
+        }
+        foreach (EqitionPack p in equitionpack)
+        {
+            foreach (ChangeMode_Adapter a in p.GetChangeMode_Eq)
+            {
+                a.Init();
+            }
+        }
 
 
     }

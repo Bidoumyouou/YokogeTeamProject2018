@@ -7,6 +7,11 @@ public class Eq_Adapter_Base : System.Object
 {
     public EqitionBase[] eqition;
 
+    public virtual void Init()
+    {
+
+    }
+
     //このアダプタに関連付けられてる全ての条件式の積を取る関数
     public bool IsAllEqition(Charactor _obj,ModeBase _mode)
     {

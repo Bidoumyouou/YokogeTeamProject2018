@@ -28,6 +28,9 @@ public class P_ModeBase : ModeBase
 
         p.recorder.SetTargetKey(targetkeylist);
         base.Mode_Start(_obj);
+
+        //MPの消費
+        p.status.MP -= MP;
     }
     public override void Mode_Update(Charactor _obj)
     {

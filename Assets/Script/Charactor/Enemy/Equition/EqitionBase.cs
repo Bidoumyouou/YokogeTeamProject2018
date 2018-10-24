@@ -3,6 +3,9 @@ using UnityEditor;
 
 public class EqitionBase : ScriptableObject
 {
+    public ModeBase targetmode;
+
+
     public void Init()
     {
 
