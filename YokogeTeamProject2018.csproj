@@ -406,6 +406,9 @@
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Animation2DExample\Scripts\Example.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Scripts\Animation2D.cs" />
     <Compile Include="Assets\TestAsset\Plugin\Animation2D\Scripts\Animation2DManager.cs" />
+    <Compile Include="Assets\TestAsset\Script for create 2D background with parallax\Script\BackGround\BackGround.cs" />
+    <Compile Include="Assets\TestAsset\Script for create 2D background with parallax\Script\BackGround\BackGroundLayer.cs" />
+    <Compile Include="Assets\TestAsset\Script for create 2D background with parallax\Script\Player Controller\Controller2d.cs" />
     <Compile Include="Assets\UI-AlphaMask\UIImageAlphaMask.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -416,6 +419,8 @@
     <None Include="Assets\TestAsset\Plugin\Movinarc\PackageUninstaller\README.txt" />
     <None Include="Assets\TestAsset\Plugin\RenameTool\Readme.txt" />
     <None Include="Assets\TestAsset\Plugin\WanzyeeStudio\Plugins\Editor\Clipboard_Lite_Editor.xml" />
+    <None Include="Assets\TestAsset\Script for create 2D background with parallax\Script\BackGround\Readme(BackGround).txt" />
+    <None Include="Assets\TestAsset\Script for create 2D background with parallax\Script\Player Controller\Readme (Controller2D).txt" />
     <None Include="Assets\UIpack\Spritesheet\blueSheet.xml" />
     <None Include="Assets\UIpack\Spritesheet\greenSheet.xml" />
     <None Include="Assets\UIpack\Spritesheet\greySheet.xml" />
