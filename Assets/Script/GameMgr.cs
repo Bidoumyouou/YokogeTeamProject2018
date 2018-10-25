@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+//10/25 シーンのロード管理の機能も付与
 public class GameMgr : MonoBehaviour {
 
     public static GameMgr thisobject;
@@ -9,6 +12,7 @@ public class GameMgr : MonoBehaviour {
     public static string NowSceneName;
     bool Scene_Reloded = false;
 
+    public string FirstSceneName;
 
     public static TestPlayer player;
     GameObject stageMgr_obj;
@@ -23,6 +27,9 @@ public class GameMgr : MonoBehaviour {
     private void Awake()
     {
         //ResourceLoadは最速でAwakeから入る
+        //FirstStageを手動でロードする
+        Application.LoadLevelAdditive(FirstSceneName);
+
 
         EnemyUI = (GameObject)Resources.Load("Prefabs/UI/EnemyUI");
         //全てのモードの初期化

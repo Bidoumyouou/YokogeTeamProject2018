@@ -13,7 +13,7 @@ public class Eq_IsJump : EqitionBase
             //↑キーが押されているか
             if ((Input.GetKeyDown(KeyCode.UpArrow)) || (Input.GetButtonDown("MySpace")))
             {
-                if (_player.IsGround() && _player.jump_waittime > jump_waittime)
+                if (_player.IsGround() && _player.jump_waittime >= jump_waittime)
                 {
                     if (_mode.IsInputReception(_obj))
                     {
