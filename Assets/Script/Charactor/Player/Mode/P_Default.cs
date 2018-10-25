@@ -26,16 +26,6 @@ public class P_Default : P_ModeBase
         base.Mode_Update(_obj);
         //地上移動
 
-
-        ////////////////////////
-        //以上、全アクション共通
-        ////////////////////////
-
-        Jump();
     }
     
-    void Jump()
-    {
-
-    }
 }

@@ -18,7 +18,8 @@ public class PlayerInputCode : System.Object{
     public string Special2;
     public string Special3;
 
-    //EditFlag__1 //これを各モード追加の度の巡回箇所にするのどう？
+    public string AirAttack;
+
 }
 
 

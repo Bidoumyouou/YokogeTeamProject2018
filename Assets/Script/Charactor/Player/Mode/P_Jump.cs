@@ -20,8 +20,16 @@ public class P_Jump : P_ModeBase
         //以上、全アクション共通
         ////////////////////////
         NextMode[0] = 1;
-        _obj.rigidbody2d.AddForce(new Vector3(0, _p.P_status.jumpheight, 0));
-        isfall = false;
+        //空中攻撃からの遷移なら
+        if ( _p.pre_mode_index != 15)
+        {
+            _obj.rigidbody2d.AddForce(new Vector3(0, _p.P_status.jumpheight, 0));
+            isfall = false;
+        }
+        else
+        {
+            isfall = true;
+        }
     }
     public override void Mode_Update(Charactor _obj)
     {

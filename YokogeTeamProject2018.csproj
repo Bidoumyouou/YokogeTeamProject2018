@@ -350,6 +350,7 @@
     <Compile Include="Assets\Script\Charactor\Player\HitBox_Move.cs" />
     <Compile Include="Assets\Script\Charactor\Player\InputRecorder.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\AttackStatus.cs" />
+    <Compile Include="Assets\Script\Charactor\Player\Mode\P_AirAttack.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_Assalt.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_Attack1.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_Attack2.cs" />
