@@ -18,10 +18,10 @@ public class P_Default : P_ModeBase
     public override void Mode_Update(Charactor _obj)
     {
         //着地したら0にする
-        if (player.IsGround() && player.ChangeAnimeState == 2)
-        {
-            player.ChangeAnimeSignal(0);
-        }
+        //if (player.IsGround() && player.ChangeAnimeState == 2)
+        //{
+        //    player.ChangeAnimeSignal(0);
+        //}
 
         base.Mode_Update(_obj);
         //地上移動
