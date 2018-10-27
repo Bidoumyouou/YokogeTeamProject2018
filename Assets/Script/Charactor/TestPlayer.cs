@@ -20,6 +20,11 @@ public class PlayerInputCode : System.Object{
 
     public string AirAttack;
 
+    //上下左右
+    public string Up;
+    public string Down;
+    public string Left;
+    public string Right;
 }
 
 
