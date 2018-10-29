@@ -57,18 +57,23 @@ public class ModeBase : ScriptableObject
         AwakeSound();
         //Equitionの初期化
 
-        foreach(ChangeMode_Adapter a in ChangeMode_Eq)
+        if (ChangeMode_Eq != null)
         {
-            a.Init();
-        }
-        foreach (EqitionPack p in equitionpack)
-        {
-            foreach (ChangeMode_Adapter a in p.GetChangeMode_Eq)
+            foreach (ChangeMode_Adapter a in ChangeMode_Eq)
             {
                 a.Init();
             }
         }
-
+        if (equitionpack != null)
+        {
+            foreach (EqitionPack p in equitionpack)
+            {
+                foreach (ChangeMode_Adapter a in p.GetChangeMode_Eq)
+                {
+                    a.Init();
+                }
+            }
+        }
 
     }
     public virtual void Mode_Update(Charactor _obj)
