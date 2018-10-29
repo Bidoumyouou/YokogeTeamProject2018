@@ -1,16 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyName : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    TestEnemy enemy;
+    Text text;
+
+    TestEnemyUI UI;
+    // Use this for initialization
+    void Start()
+    {
+        UI = GetComponentInParent<TestEnemyUI>();
+        text = GetComponent<Text>();
+    }
+
+    // Update is called once per frame
+    void Update () {
+        if (enemy == null && UI.TargetObject != null)
+            enemy = UI.TargetObject.GetComponent<TestEnemy>();
+        if (enemy != null)
+        {
+            text.text =  enemy.name;
+        }
+
+    }
 }

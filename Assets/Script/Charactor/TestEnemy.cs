@@ -16,7 +16,7 @@ using UnityEditor;
 
 public class TestEnemy : Charactor
 {
-    
+    public string name = "名前未設定";//エネミーの名前
     
     public E_ModeBase[] ModeList = new E_ModeBase[8]; 
 
