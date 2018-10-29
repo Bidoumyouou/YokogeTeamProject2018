@@ -301,6 +301,8 @@
     <Compile Include="Assets\Script\Bidou_Global.cs" />
     <Compile Include="Assets\Script\Button.cs" />
     <Compile Include="Assets\Script\Canvas\CuiInObject.cs" />
+    <Compile Include="Assets\Script\Canvas\EnemyHP.cs" />
+    <Compile Include="Assets\Script\Canvas\EnemyName.cs" />
     <Compile Include="Assets\Script\Canvas\HPView.cs" />
     <Compile Include="Assets\Script\Canvas\MPView.cs" />
     <Compile Include="Assets\Script\Canvas\ObjectUIGenerator.cs" />
