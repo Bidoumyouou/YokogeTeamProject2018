@@ -51,6 +51,8 @@ public class TestPlayer : Charactor {
 
     public P_ModeBase[] SpecialActionList;
 
+    Player_IsGround Isground;
+
     void Start () {
         tag = E_Tag.Player;
         ParentStart();
@@ -68,7 +70,8 @@ public class TestPlayer : Charactor {
 
         Move_Vec_Norm = Move_Vec.normalized;
 
-
+        //床当たり判定の読み込み
+        Isground = GetComponentInChildren<Player_IsGround>();
 
     }
 
@@ -110,11 +113,10 @@ public class TestPlayer : Charactor {
     //↑直前のvelocityを記録して比較することで検出する仕様で実装
     public bool IsGround()
     {
-        if (System.Math.Abs(rigidbody2d.velocity.y) == 0.00 && tmp_velocity <= 0.00)
+        if (Isground.IsGround)
         {
             return true;
-
-        }
+        } 
         return false;
     }
     
@@ -146,6 +148,8 @@ public class TestPlayer : Charactor {
                 ChangeMode(9);
             }
         }
+
+        
     }
     
     public void Fall(int _damegevalue)
