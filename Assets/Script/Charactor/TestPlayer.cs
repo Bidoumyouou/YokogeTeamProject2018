@@ -52,7 +52,7 @@ public class TestPlayer : Charactor {
     public P_ModeBase[] SpecialActionList;
 
     Player_IsGround Isground;
-
+    Rigidbody2D rb;
     void Start () {
         tag = E_Tag.Player;
         ParentStart();
@@ -72,6 +72,8 @@ public class TestPlayer : Charactor {
 
         //床当たり判定の読み込み
         Isground = GetComponentInChildren<Player_IsGround>();
+        //rigidbodyの読み込み
+        rb = GetComponent<Rigidbody2D>();
 
     }
 
@@ -111,10 +113,12 @@ public class TestPlayer : Charactor {
     }
     //接地しているか否か(実際の作業の場合はタグ付けしたものと足が接触しているかで判断)
     //↑直前のvelocityを記録して比較することで検出する仕様で実装
+    public float velocity_sleshold = 0.8f;//設置判定にOKを出す速度の閾値
     public bool IsGround()
     {
-        if (Isground.IsGround)
+        if (Isground.IsGround && Mathf.Abs( rb.velocity.y) <= velocity_sleshold  )
         {
+            
             return true;
         } 
         return false;
