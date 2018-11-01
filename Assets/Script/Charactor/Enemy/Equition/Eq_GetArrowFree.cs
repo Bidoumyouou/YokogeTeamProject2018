@@ -8,7 +8,7 @@ public class Eq_GetArrowFree : EqitionBase
         if (_obj.tag.ToString() == "Player")
         {
             TestPlayer _player = _obj.GetComponent<TestPlayer>();
-            if ((!Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow)))
+            if ((Input.GetAxis("MyHorizontal") == 0.0f))
             {
                 return true;
             }

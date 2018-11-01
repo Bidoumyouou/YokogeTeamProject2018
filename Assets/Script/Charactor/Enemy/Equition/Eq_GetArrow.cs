@@ -8,8 +8,12 @@ public class Eq_GetArrow : EqitionBase
     {
         if (_obj.tag.ToString() == "Player")
         {
+            
+
             TestPlayer _player = _obj.GetComponent<TestPlayer>();
-            if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)))
+            float f = Input.GetAxis("MyHorizontal");
+            if (f != 0 )
+
             {
                 if (_mode.IsInputReception(_obj))
                 {

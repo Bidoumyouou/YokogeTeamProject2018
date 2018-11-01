@@ -60,6 +60,8 @@ public class GameMgr : MonoBehaviour {
             }
             Scene_Reloded = false;
         }
+
+
     }
 
     //ゲームオーバー

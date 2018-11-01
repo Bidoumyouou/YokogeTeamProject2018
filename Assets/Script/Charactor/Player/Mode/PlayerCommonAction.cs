@@ -35,7 +35,7 @@ static public class PlayerCommonAction
         _player.transform.localScale = new Vector3(System.Math.Abs(_player.transform.localScale.x) * Global.BoolToSign(_player.IsRight), _player.transform.localScale.y, _player.transform.localScale.z);
 
         //ここではLocalScaleはIsRightに依存
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("MyHorizontal") > 0)
         {
             _player.transform.Translate(new Vector3(_player.P_status.walkspeed, 0, 0));
             _player.IsRight = true;
@@ -45,7 +45,7 @@ static public class PlayerCommonAction
             }
             return;
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("MyHorizontal") < 0)
         {
             //左に移動
             _player.transform.Translate(new Vector3(-_player.P_status.walkspeed, 0, 0));

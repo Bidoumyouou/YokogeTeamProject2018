@@ -37,11 +37,11 @@ public class P_ModeBase : ModeBase
         //IsRightの更新
         if (_obj.nowflag.IsAbleToMove)
         {
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("MyHorizontal") > 0)
             {
                 _obj.IsRight = true;
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("MyHorizontal") < 0)
             {
                 _obj.IsRight = false;
             }
