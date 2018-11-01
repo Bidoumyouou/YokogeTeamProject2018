@@ -311,6 +311,7 @@
     <Compile Include="Assets\Script\Charactor\Enemy\E003_Gobrin\E003_Attack.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E003_Gobrin\E003_Dameged.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E003_Gobrin\E003_Move.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\E003_Gobrin\E003_Stop.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E003_Gobrin\Gobrin.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E004_Mage\E001_Test.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E004_Mage\E004_Attack.cs" />
