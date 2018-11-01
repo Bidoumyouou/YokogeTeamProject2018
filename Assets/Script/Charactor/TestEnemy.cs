@@ -58,11 +58,11 @@ public class TestEnemy : Charactor
         {
             Mode = ModeList[0];
         }
-        Mode.Mode_Start(this);
         animator = GetComponent<Animator>();
         BaseScale_x = transform.lossyScale.x;//;//エネミーの元々のスケールを取得
+        Mode.Mode_Start(this);
 
-        
+
         //エネミーUIの作成
         StartCoroutine("SetEnemyUI");
         EnemyUI = GameMgr.thisobject.EnemyUI;
