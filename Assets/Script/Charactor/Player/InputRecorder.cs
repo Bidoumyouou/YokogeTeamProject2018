@@ -25,6 +25,10 @@ public class InputRecorder :System.Object{
         foreach(string s in TargetKeyList)
         {
             //ボタンが入力されたら
+
+            //Axis系の入力に対して偽造工作する
+            ConvertAxisToButton(s);
+
             if (Input.GetButtonDown(s))
             {
                 KeyList.Add(s);
@@ -32,8 +36,37 @@ public class InputRecorder :System.Object{
         }
     }
 
+
+    void ConvertAxisToButton(string s)
+    {
+        //右ジョイスティック
+        if(s == "MyHorizontal" && Input.GetAxis(s) > 0)
+        {
+            KeyList.Add("MyRight");
+        }
+        //左ジョイスティック
+        if (s == "MyHorizontal" && Input.GetAxis(s) < 0)
+        {
+            KeyList.Add("MyLeft");
+        }
+        //↑ジョイスティック
+        if (s == "MyVertical" && Input.GetAxis(s) < 0)
+        {
+            KeyList.Add("MyUp");
+        }
+        //下ジョイスティック
+        if (s == "MyVertical" && Input.GetAxis(s) > 0)
+        {
+            KeyList.Add("MyDown");
+        }
+
+
+
+    }
     public bool Check(List<string> _targetlist)
     {
+
+
         if (_targetlist.Count == 0) { return true; }
         //条件に合うキーが入っているかどうか
         foreach (string s in _targetlist)
