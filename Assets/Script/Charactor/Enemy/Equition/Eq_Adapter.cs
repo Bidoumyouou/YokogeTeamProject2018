@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class Eq_Adapter_Base : System.Object
 {
     public EqitionBase[] eqition;
-    public bool CallForDebug = false;
+    public bool CallForDebug;
     public virtual void Init()
     {
 

@@ -76,8 +76,11 @@ public class InputRecorder :System.Object{
         //入っていたら順序があっているか
         List<string> tmplist = new List<string>();
 
+
+        
         tmplist.AddRange(KeyList);
         //targetkeyの中身と合致する
+        /*
         while(tmplist.Contains(_targetlist[0]))
         {
             var index = tmplist.IndexOf(_targetlist[0]);
@@ -101,7 +104,11 @@ public class InputRecorder :System.Object{
                 tmplist.Remove(_targetlist[0]);
             }
         }
-
-        return false;
+        */
+        foreach(string s in _targetlist){
+            tmplist.Remove(s);
+        }
+        
+        return true;
     }
 }

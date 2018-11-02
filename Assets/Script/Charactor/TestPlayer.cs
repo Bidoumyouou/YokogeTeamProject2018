@@ -52,6 +52,8 @@ public class TestPlayer : Charactor {
     public P_ModeBase[] SpecialActionList;
 
     Player_IsGround Isground;
+    [SerializeField] public List<string> targetkeylist;
+
     Rigidbody2D rb;
     void Start () {
         tag = E_Tag.Player;

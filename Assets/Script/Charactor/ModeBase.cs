@@ -155,7 +155,10 @@ public class ModeBase : ScriptableObject
                 {
                     //変更先のモードとこのモードが異なるなら
                     if (this.index != p.TargetMode.index)
+                    {
                         _obj.ChangeMode(p.TargetMode.index);
+                        return;
+                    }
                 }
                 return;
             }
