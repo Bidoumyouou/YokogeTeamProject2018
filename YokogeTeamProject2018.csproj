@@ -321,11 +321,11 @@
     <Compile Include="Assets\Script\Charactor\Enemy\E005_Nest\E005_Default.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E005_Nest\E005_Wait.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\E005_Nest\EnemyNest.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\Equition\ButtonStacked\Eq_ButtonStacked.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\ChangeMode_Adapter.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\EndAnimation.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Endtime.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_Adapter.cs" />
-    <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_ButtonStacked.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetArrow.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetArrowDown.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetArrowFree.cs" />

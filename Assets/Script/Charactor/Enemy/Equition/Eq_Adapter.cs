@@ -2,11 +2,12 @@
 using UnityEditor;
 
 using System;
+using System.Collections.Generic;
 [System.Serializable]
 public class Eq_Adapter_Base : System.Object
 {
     public EqitionBase[] eqition;
-
+    public bool CallForDebug = false;
     public virtual void Init()
     {
 
@@ -26,6 +27,10 @@ public class Eq_Adapter_Base : System.Object
             {
                 return false;
             }
+        }
+        if (CallForDebug)
+        {
+            Debug.Log("Equition Returned True");
         }
         return true;
 

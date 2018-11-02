@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class Eq_ButtonStacked : EqitionBase
 {
+
     [Tooltip("対応するキーの名前を設置(MyZなど)【プレイヤー専用】")] public List<string> MyKey;
     public override bool Equition(Charactor _obj, ModeBase _mode)
     {

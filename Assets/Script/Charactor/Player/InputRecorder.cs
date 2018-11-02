@@ -82,7 +82,7 @@ public class InputRecorder :System.Object{
         {
             var index = tmplist.IndexOf(_targetlist[0]);
             bool flag = true;
-            for (int i = 1; i < _targetlist.Count; i++)
+            for (int i = 0; i < _targetlist.Count; i++)
             {
                 if(tmplist.Count < _targetlist.Count) { return false; }
                 if (!(tmplist[index + i] == _targetlist[i]))

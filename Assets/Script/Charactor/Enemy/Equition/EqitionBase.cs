@@ -6,6 +6,7 @@ public class EqitionBase : ScriptableObject
     [HideInInspector]public ModeBase targetmode;
     public string Comment;
 
+
     public void Init()
     {
 
