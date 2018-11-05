@@ -13,6 +13,7 @@ public class ChangeMode_Adapter:Eq_Adapter_Base
     {
         foreach(EqitionBase e in eqition)
         {
+            order = 5;
             //ターゲットモードをセッティング
             e.targetmode = TargetMode;
         }
