@@ -40,7 +40,7 @@ public class ModeBase : ScriptableObject
     [HideInInspector] public ChangeMode_Adapter[] AllEqition; 
 
     public ModeFlag flag;
-
+    [HideInInspector]public int CallBack_Reciver = -1;//Equitionからの
 
     public virtual void Mode_Start(Charactor _obj)
     {
@@ -107,6 +107,9 @@ public class ModeBase : ScriptableObject
             //全部終わったらtmpを本物へ書き換える
         }
         AllEqition = tmp_eq;
+
+        //コールバックの始末
+        CallBack_Reciver = -1;
     }
     public virtual void Mode_Update(Charactor _obj)
     {
@@ -156,6 +159,7 @@ public class ModeBase : ScriptableObject
                     //変更先のモードとこのモードが異なるなら
                     if (this.index != p.TargetMode.index)
                     {
+                        CallBack_Reciver = p.CallBack;
                         _obj.ChangeMode(p.TargetMode.index);
                         return;
                     }

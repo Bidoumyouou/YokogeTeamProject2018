@@ -7,7 +7,9 @@ using System.Collections.Generic;
 public class Eq_Adapter_Base : System.Object
 {
     public EqitionBase[] eqition;
-    public bool CallForDebug;
+    [Tooltip("条件が実行されたときに付与する引数")] public int CallBack = -1;//条件が実行されたときに付与する引数
+
+    [Tooltip("チェックを入れればDebugLogに成立時通達する")] public bool CallForDebug;
     public virtual void Init()
     {
 

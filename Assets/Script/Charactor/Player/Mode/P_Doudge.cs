@@ -22,10 +22,13 @@ public class P_Doudge : P_ModeBase
  
     Vector2 Vector = new Vector2();
 
-
+    bool IsRight_Doudge;//コールバックから「どっちに避けるか」を取得
+    //0..その場 1..→ 2..←
 
     public override void Mode_Start(Charactor _obj)
     {
+
+
         Modeparam = new P_DoudgeParam();
 
         Modeparam.Doudge_tmp = 0.0f;

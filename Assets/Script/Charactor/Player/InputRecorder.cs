@@ -9,6 +9,15 @@ public class InputRecorder :System.Object{
     public List<string> KeyList = new List<string>();//実際に収集したキー
     public bool keySuccess = false;
     List<string> RemoveKeyList = new List<string>();
+
+    bool Pre_Axis_Up = false;
+    bool Pre_Axis_Down = false;
+    bool Pre_Axis_Left = false;
+    bool Pre_Axis_Right = false;
+    public bool now_Axis_Up = false;
+    public bool now_Axis_Down = false;
+    public bool now_Axis_Left = false;
+    public bool now_Axis_Right = false;
     void Init()
     {
         KeyList.Clear();
@@ -23,10 +32,51 @@ public class InputRecorder :System.Object{
 
     public void Update()
     {
-        if(TargetKeyList.Count == 0) { return; }
+        //右ジョイスティック
+        if (Input.GetAxis("MyHorizontal") > 0)
+        {
+            now_Axis_Right = true;
+        }
+        else
+        {
+            now_Axis_Right = false;
+        }
+        //左ジョイスティック
+        if (Input.GetAxis("MyHorizontal") < 0)
+        {
+            now_Axis_Left = true;
+        }
+        else
+        {
+            now_Axis_Left = false;
+        }
+        //↑ジョイスティック
+        if (Input.GetAxis("MyVertical") < 0)
+        {
+            now_Axis_Up = true;
+        }
+        else
+        {
+            now_Axis_Up = false;
+        }
+
+        //下ジョイスティック
+        if (Input.GetAxis("MyVertical") > 0)
+        {
+            now_Axis_Down = true;
+        }
+        else
+        {
+            now_Axis_Down = false;
+        }
+
+
+
+        if (TargetKeyList.Count == 0) { return; }
         foreach(string s in TargetKeyList)
         {
             //ボタンが入力されたら
+
 
             //Axis系の入力に対して偽造工作する
             ConvertAxisToButton(s);
@@ -36,32 +86,37 @@ public class InputRecorder :System.Object{
                 KeyList.Add(s);
             }
         }
+
+        Pre_Axis_Up = now_Axis_Up;
+        Pre_Axis_Down = now_Axis_Down;
+        Pre_Axis_Left = now_Axis_Left;
+        Pre_Axis_Right = now_Axis_Right;
+
     }
 
 
     void ConvertAxisToButton(string s)
     {
-        //右ジョイスティック
-        if(s == "MyHorizontal" && Input.GetAxis(s) > 0)
-        {
-            KeyList.Add("MyRight");
-        }
-        //左ジョイスティック
-        if (s == "MyHorizontal" && Input.GetAxis(s) < 0)
-        {
-            KeyList.Add("MyLeft");
-        }
-        //↑ジョイスティック
-        if (s == "MyVertical" && Input.GetAxis(s) < 0)
+
+        //ジョイスティックにIsDownを疑似的に追加
+
+
+        if(s == "MyHorizontal" && now_Axis_Up && !Pre_Axis_Up)
         {
             KeyList.Add("MyUp");
         }
-        //下ジョイスティック
-        if (s == "MyVertical" && Input.GetAxis(s) > 0)
+        if (s == "MyHorizontal" && now_Axis_Down && !Pre_Axis_Down)
         {
             KeyList.Add("MyDown");
         }
-
+        if (s == "MyVertical" && now_Axis_Left && !Pre_Axis_Left)
+        {
+            KeyList.Add("MyLeft");
+        }
+        if (s == "MyVertical" && now_Axis_Right && !Pre_Axis_Right)
+        {
+            KeyList.Add("MyRight");
+        }
 
 
     }
@@ -135,5 +190,11 @@ public class InputRecorder :System.Object{
         {
             RemoveKeyList.Remove(s);
         }
+        //AxisDOwn用の変数のリセット
+       now_Axis_Up = Pre_Axis_Up = false;
+       now_Axis_Down = Pre_Axis_Down = false;
+       now_Axis_Left = Pre_Axis_Left = false;
+       now_Axis_Right = Pre_Axis_Right = false;
+
     }
 }
