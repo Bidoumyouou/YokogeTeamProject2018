@@ -6,7 +6,9 @@ using UnityEngine;
 [System.Serializable]
 public class InputRecorder :System.Object{
     List<string> TargetKeyList = new List<string>();//収集するキーの種類リスト
-    List<string> KeyList = new List<string>();//実際に収集したキー
+    public List<string> KeyList = new List<string>();//実際に収集したキー
+
+    List<string> RemoveKeyList = new List<string>();
     void Init()
     {
         KeyList.Clear();
@@ -105,10 +107,25 @@ public class InputRecorder :System.Object{
             }
         }
         */
+
+        //いったんRemoveリストに参照渡しして実際にChangeModeするときに消す
+        RemoveKeyList = tmplist;
+        /*
         foreach(string s in _targetlist){
             tmplist.Remove(s);
+            
         }
-        
+        */
         return true;
+    }
+
+    public void RemoveKey()
+    {
+        if (RemoveKeyList.Count == 0)
+            return;
+        foreach(string s in RemoveKeyList)
+        {
+            RemoveKeyList.Remove(s);
+        }
     }
 }

@@ -106,6 +106,9 @@ public class TestPlayer : Charactor {
         animator.SetTrigger("ChangeMode");
         Mode.Mode_Start(this);
 
+        //InputRecorderのデータの破棄
+        recorder.RemoveKey();
+        
         
 	}
     public void ChangeMode(PlayerMode _nextno)
