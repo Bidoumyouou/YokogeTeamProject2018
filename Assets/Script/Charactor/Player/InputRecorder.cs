@@ -178,6 +178,12 @@ public class InputRecorder :System.Object{
 
     public void RemoveKey()
     {
+        //AxisDOwn用の変数のリセット
+        now_Axis_Up = Pre_Axis_Up = false;
+        now_Axis_Down = Pre_Axis_Down = false;
+        now_Axis_Left = Pre_Axis_Left = false;
+        now_Axis_Right = Pre_Axis_Right = false;
+
         keySuccess = false;
 
         if (RemoveKeyList == null)
@@ -186,15 +192,7 @@ public class InputRecorder :System.Object{
         }
         if (RemoveKeyList.Count == 0)
             return;
-        foreach(string s in RemoveKeyList)
-        {
-            RemoveKeyList.Remove(s);
-        }
-        //AxisDOwn用の変数のリセット
-       now_Axis_Up = Pre_Axis_Up = false;
-       now_Axis_Down = Pre_Axis_Down = false;
-       now_Axis_Left = Pre_Axis_Left = false;
-       now_Axis_Right = Pre_Axis_Right = false;
+        RemoveKeyList.RemoveRange(0, RemoveKeyList.Count);
 
     }
 }

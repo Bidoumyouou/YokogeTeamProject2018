@@ -22,7 +22,7 @@ public class P_Doudge : P_ModeBase
  
     Vector2 Vector = new Vector2();
 
-    bool IsRight_Doudge;//コールバックから「どっちに避けるか」を取得
+    int IsRight_Doudge;//コールバックから「どっちに避けるか」を取得
     //0..その場 1..→ 2..←
 
     public override void Mode_Start(Charactor _obj)
@@ -37,13 +37,19 @@ public class P_Doudge : P_ModeBase
         base.Mode_Start(_obj);
         //移動
         
-        if (obj.IsRight)
+        //→
+        if (IsRight_Doudge == 1)
         {
             Vector.Set(1.0f, 0.0f);
         }
-        else
+        //←
+        else if (IsRight_Doudge == 2)
         {
             Vector.Set(-1.0f, 0.0f);
+        }
+        else//その場
+        {
+            Vector.Set(0.0f, 0.0f);
         }
  
 

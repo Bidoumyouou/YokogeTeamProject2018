@@ -108,8 +108,6 @@ public class ModeBase : ScriptableObject
         }
         AllEqition = tmp_eq;
 
-        //コールバックの始末
-        CallBack_Reciver = -1;
     }
     public virtual void Mode_Update(Charactor _obj)
     {
@@ -142,6 +140,7 @@ public class ModeBase : ScriptableObject
     }
 
 
+
     protected void Do_EqitionAll(Charactor _obj)
     {
         //先にインスペクタから中身を入れているかどうかを確認
@@ -159,8 +158,7 @@ public class ModeBase : ScriptableObject
                     //変更先のモードとこのモードが異なるなら
                     if (this.index != p.TargetMode.index)
                     {
-                        CallBack_Reciver = p.CallBack;
-                        _obj.ChangeMode(p.TargetMode.index);
+                        _obj.ChangeMode(p.TargetMode.index,p.CallBack);
                         return;
                     }
                 }
@@ -189,7 +187,7 @@ public class ModeBase : ScriptableObject
                 {
                     //変更先のモードとこのモードが異なるなら
                     if (this.index != p.TargetMode.index)
-                        _obj.ChangeMode(p.TargetMode.index);
+                        _obj.ChangeMode(p.TargetMode.index,p.CallBack);
                 }
                 return;
             }
@@ -205,7 +203,7 @@ public class ModeBase : ScriptableObject
                     {
                         //変更先のモードとこのモードが異なるなら
                         if (this.index != p.TargetMode.index)
-                            _obj.ChangeMode(p.TargetMode.index);
+                            _obj.ChangeMode(p.TargetMode.index,p.CallBack);
                     }
                     return;
                 }

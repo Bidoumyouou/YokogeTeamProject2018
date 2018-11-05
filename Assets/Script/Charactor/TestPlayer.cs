@@ -82,7 +82,8 @@ public class TestPlayer : Charactor {
     }
 
 
-    override public void ChangeMode(int _nextno){
+    override public void ChangeMode(int _nextno, int _callback = -1){
+
         //エイリアスが設定されているモードは変換する
         if (_nextno == 101)
             _nextno = SpecialActionList[0].index;
@@ -98,7 +99,15 @@ public class TestPlayer : Charactor {
         {
             pre_mode_index = modeindex;
         }
+
+        //InputRecorderのデータの破棄
+        recorder.RemoveKey();
+
+        keysuccesstimer = 0.0f;
+
         Mode.DeleteHitBox(this);//対象のモードの当たり判定を破棄
+
+
         Mode = ModeList[_nextno];
         Mode.obj = this;
         Mode.player = this;
@@ -106,14 +115,18 @@ public class TestPlayer : Charactor {
         Mode.index = modeindex = (int)_nextno;
         animator.SetInteger("Status", Mode.index);
         animator.SetTrigger("ChangeMode");
+        
+        Mode.CallBack_Reciver = _callback;
+
         Mode.Mode_Start(this);
 
-        //InputRecorderのデータの破棄
-        recorder.RemoveKey();
-        
-        keysuccesstimer  = 0.0f;
-        
-	}
+
+        if (_callback != -1)
+        {
+            Debug.Log("CallBack was Called :" + _callback.ToString());
+        }
+
+    }
     public void ChangeMode(PlayerMode _nextno)
     {
         ChangeMode((int)_nextno);
