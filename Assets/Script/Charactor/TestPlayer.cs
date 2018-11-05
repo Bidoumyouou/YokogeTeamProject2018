@@ -54,6 +54,8 @@ public class TestPlayer : Charactor {
     Player_IsGround Isground;
     [SerializeField] public List<string> targetkeylist;
 
+    public float keysuccesstimer;//キー入力が成立してからの待ち時間
+
     Rigidbody2D rb;
     void Start () {
         tag = E_Tag.Player;
@@ -109,6 +111,7 @@ public class TestPlayer : Charactor {
         //InputRecorderのデータの破棄
         recorder.RemoveKey();
         
+        keysuccesstimer  = 0.0f;
         
 	}
     public void ChangeMode(PlayerMode _nextno)
@@ -158,7 +161,8 @@ public class TestPlayer : Charactor {
             }
         }
 
-        
+        if(recorder.keySuccess)
+            keysuccesstimer += Time.deltaTime;
     }
     
     public void Fall(int _damegevalue)

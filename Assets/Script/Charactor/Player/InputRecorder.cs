@@ -7,7 +7,7 @@ using UnityEngine;
 public class InputRecorder :System.Object{
     List<string> TargetKeyList = new List<string>();//収集するキーの種類リスト
     public List<string> KeyList = new List<string>();//実際に収集したキー
-
+    public bool keySuccess = false;
     List<string> RemoveKeyList = new List<string>();
     void Init()
     {
@@ -110,6 +110,8 @@ public class InputRecorder :System.Object{
 
         //いったんRemoveリストに参照渡しして実際にChangeModeするときに消す
         RemoveKeyList = tmplist;
+        //キー入力成立通知をプレイヤーに送る
+        keySuccess = true;
         /*
         foreach(string s in _targetlist){
             tmplist.Remove(s);
@@ -121,6 +123,12 @@ public class InputRecorder :System.Object{
 
     public void RemoveKey()
     {
+        keySuccess = false;
+
+        if (RemoveKeyList == null)
+        {
+            return;
+        }
         if (RemoveKeyList.Count == 0)
             return;
         foreach(string s in RemoveKeyList)

@@ -334,6 +334,7 @@
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_InRange.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_IsGround.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_IsJump.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_KeySuccessTimer.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_MP.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_Timer.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\EqitionBase.cs" />
