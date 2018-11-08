@@ -10,7 +10,7 @@ public class P_DoudgeParam : P_ModeParamBase {
 public class P_Doudge : P_ModeBase
 {
     //モードに持たせられないモード固有のパラメータを記録するメンバ
-    
+    int p = 0;
 
 
     [Tooltip("無敵開始時間")] public float Muteki_Start;
@@ -36,7 +36,8 @@ public class P_Doudge : P_ModeBase
         player.ChangeAnimeSignal(7);
         base.Mode_Start(_obj);
         //移動
-        
+        IsRight_Doudge = CallBack_Reciver;
+
         //→
         if (IsRight_Doudge == 1)
         {
