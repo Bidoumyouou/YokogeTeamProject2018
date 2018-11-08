@@ -120,4 +120,8 @@ public class Charactor : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    public virtual void ChangeMode(int _nextno, int _callback)
+    {
+
+    }
 }

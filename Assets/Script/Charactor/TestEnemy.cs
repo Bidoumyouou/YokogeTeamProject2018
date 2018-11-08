@@ -87,7 +87,9 @@ public class TestEnemy : Charactor
        
     }
 
-    override public void ChangeMode(int _nextno)
+
+
+    override public void ChangeMode(int _nextno, int _callback = -1)
     {
         //もしモードが「変わっていたら」
         if (modeindex != _nextno)
@@ -107,6 +109,11 @@ public class TestEnemy : Charactor
         modetime = 0.0f;
         Mode.index = modeindex =_nextno;
         Mode.Mode_Start(this);
+
+        if (_callback != -1)
+        {
+            Debug.Log("CallBack was Called :" + _callback.ToString());
+        }
 
     }
 
