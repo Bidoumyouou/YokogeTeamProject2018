@@ -123,7 +123,7 @@ public class TestPlayer : Charactor {
 
         if (_callback != -1)
         {
-            Debug.Log("CallBack was Called :" + _callback.ToString());
+//            Debug.Log("CallBack was Called :" + _callback.ToString());
         }
 
     }
