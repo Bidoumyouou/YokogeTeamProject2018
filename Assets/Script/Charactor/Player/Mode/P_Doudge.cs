@@ -24,13 +24,9 @@ public class P_Doudge : P_ModeBase
 
     int IsRight_Doudge;//コールバックから「どっちに避けるか」を取得
     //0..その場 1..→ 2..←
-
     public override void Mode_Start(Charactor _obj)
     {
-
-
         Modeparam = new P_DoudgeParam();
-
         Modeparam.Doudge_tmp = 0.0f;
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(7);
@@ -52,8 +48,6 @@ public class P_Doudge : P_ModeBase
         {
             Vector.Set(0.0f, 0.0f);
         }
- 
-
     }
     public override void Mode_Update(Charactor _obj)
     {
@@ -90,7 +84,7 @@ public class P_Doudge : P_ModeBase
             }
             return;
         }
-        
+
         obj.transform.Translate(Time.deltaTime * Vector * MoveSpeed);
         Modeparam.Doudge_tmp += Time.deltaTime * MoveSpeed;
         //規定量まで移動していたら
