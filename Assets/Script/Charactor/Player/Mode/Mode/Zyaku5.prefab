@@ -88,7 +88,7 @@ MonoBehaviour:
   type: 0
   value: 2
   power: 9
-  vector: {x: 0, y: 0}
+  vector: {x: 1, y: 0}
   speed: 0.5
 --- !u!114 &114553118094983832
 MonoBehaviour:

@@ -130,7 +130,7 @@ MonoBehaviour:
   type: 0
   value: 1
   power: 2
-  vector: {x: 0, y: 0}
+  vector: {x: 1, y: 0}
   speed: 3
 --- !u!212 &212086744765934064
 SpriteRenderer:

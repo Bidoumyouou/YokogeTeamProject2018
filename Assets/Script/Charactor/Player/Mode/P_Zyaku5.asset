@@ -14,7 +14,7 @@ MonoBehaviour:
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
-  - {fileID: 1804088558442554, guid: 23b0a3af1ccdca24680f7d6fc5b8486c, type: 2}
+  - {fileID: 1977080915539892, guid: b24bf1b60d4fedd4d9783115233cd952, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

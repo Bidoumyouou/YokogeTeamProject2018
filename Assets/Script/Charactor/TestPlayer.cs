@@ -209,10 +209,12 @@ public class TestPlayer : Charactor {
         }
         else
         {
-            gameObject.layer = 9;//PlayerInvisible
+            gameObject.layer = 9;//Player
 
         }
 
+        //瀕死アニメ用の体力管理
+        animator.SetBool("Deadly", (status.HP <= 2));
     }
 
     public void Fall(int _damegevalue)
