@@ -56,6 +56,7 @@ public class TestPlayer : Charactor {
 
     public float keysuccesstimer;//キー入力が成立してからの待ち時間
 
+ 
     Rigidbody2D rb;
     void Start () {
         tag = E_Tag.Player;
@@ -126,6 +127,8 @@ public class TestPlayer : Charactor {
 //            Debug.Log("CallBack was Called :" + _callback.ToString());
         }
 
+        //
+
     }
     public void ChangeMode(PlayerMode _nextno)
     {
@@ -173,9 +176,33 @@ public class TestPlayer : Charactor {
                 ChangeMode(9);
             }
         }
-
+        //キー入力成立タイマー更新
         if(recorder.keySuccess)
             keysuccesstimer += Time.deltaTime;
+
+        //無敵タイマー更新
+        if (Invisible)
+        {
+            invisibletimer += Time.deltaTime;
+
+            if(invisibletimer > invisibletime)
+            {
+                invisibletimer = 0;
+                Invisible = false;
+            }
+        }
+        //無敵だったらカラーマスク(紫)
+        if (Invisible || !nowflag.IsAbleToBeClashed)
+        {
+            renderer.color = Color.magenta;
+        }
+        else
+        {
+            if(renderer.color == Color.magenta)
+                renderer.color = Color.white;
+
+        }
+
     }
     
     public void Fall(int _damegevalue)
