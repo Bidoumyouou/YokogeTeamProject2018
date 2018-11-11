@@ -3,7 +3,7 @@
 
 public class E003_Move : E_ModeBase
 {
-    [ToolTip("壁で方向転換するかどうか")]bool ReturnByWall = true;
+    public bool ReturnByWall = true;
 
     public float dash_speed;
     
