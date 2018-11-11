@@ -4,7 +4,7 @@ using System.Collections;
 public class P_Run : P_ModeBase
 {
 
-
+    public int p = 0;
     void HackRecorder(TestPlayer p)
     {
         if (CallBack_Reciver == 1)

@@ -73,6 +73,9 @@ public class InputRecorder :System.Object{
 
 
         if (TargetKeyList.Count == 0) { return; }
+        //同時押しを考慮するために「一回追加したらそれ以外のキーをもう一周捜査」を入れてみる
+
+
         foreach(string s in TargetKeyList)
         {
             //ボタンが入力されたら
@@ -80,6 +83,8 @@ public class InputRecorder :System.Object{
 
             //Axis系の入力に対して偽造工作する
             ConvertAxisToButton(s);
+            //回避系の入力に対して偽造工作する
+            ConvertDoudgeButton(s);
 
             if (Input.GetButtonDown(s))
             {
@@ -93,7 +98,17 @@ public class InputRecorder :System.Object{
         Pre_Axis_Right = now_Axis_Right;
 
     }
-
+    void ConvertDoudgeButton(string s)
+    {
+        if(s == "MyC")
+        {
+            if (Input.GetButton(s))
+            {
+                if(!KeyList.Contains("MyC"))
+                    KeyList.Add(s);
+            }
+        }
+    }
 
     void ConvertAxisToButton(string s)
     {
