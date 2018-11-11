@@ -27,10 +27,7 @@ public class Charactor : MonoBehaviour
     [HideInInspector] public GameObject[] hitbox = new GameObject[8];//実際に画面に発生したあたり判定 
 
     public ModeFlag nowflag;
-    public virtual void ChangeMode(int _nextno)
-    {
 
-    }
     [Tooltip("初めに遷移するモードをindexで")] public int FirstMode;//初めに遷移するモード
     protected void ParentStart()
     {
@@ -120,7 +117,7 @@ public class Charactor : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    public virtual void ChangeMode(int _nextno, int _callback)
+    public virtual void ChangeMode(int _nextno, int _callback = -1)
     {
 
     }
