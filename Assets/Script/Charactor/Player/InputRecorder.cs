@@ -84,7 +84,7 @@ public class InputRecorder :System.Object{
             //Axis系の入力に対して偽造工作する
             ConvertAxisToButton(s);
             //回避系の入力に対して偽造工作する
-            ConvertDoudgeButton(s);
+            //ConvertDoudgeButton(s);
 
             if (Input.GetButtonDown(s))
             {
@@ -208,6 +208,22 @@ public class InputRecorder :System.Object{
         if (RemoveKeyList.Count == 0)
             return;
         RemoveKeyList.RemoveRange(0, RemoveKeyList.Count);
+
+    }
+
+    //特定のモード(主にRun)で最新以外の左右キーを排除する
+    public void DeleteOldAllowStack()
+    {
+        List<string> oldkeylist = new List<string>();
+
+
+        for(int i = 0; i< KeyList.Count - 1;i++)
+        {
+           if( KeyList[i] == "MyRight" || KeyList[i] == "MyLeft")
+            {
+                KeyList.Remove(KeyList[i]);
+            }
+        }
 
     }
 }

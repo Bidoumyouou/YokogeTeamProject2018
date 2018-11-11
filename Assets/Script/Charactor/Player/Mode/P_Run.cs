@@ -3,8 +3,8 @@ using System.Collections;
 
 public class P_Run : P_ModeBase
 {
+    TestPlayer p;
 
-    public int p = 0;
     void HackRecorder(TestPlayer p)
     {
         if (CallBack_Reciver == 1)
@@ -25,7 +25,7 @@ public class P_Run : P_ModeBase
     public override void Mode_Start(Charactor _obj)
     {
         //コールバックによってInputRecorderをハックする
-        TestPlayer p = _obj.GetComponent<TestPlayer>();
+        p = _obj.GetComponent<TestPlayer>();
 
 
         //アニメシグナルの呼び出し
@@ -53,8 +53,9 @@ public class P_Run : P_ModeBase
         }
         _obj.transform.Translate(new Vector2(player.P_status.walkspeed * MyCommonF.BoolToPorn(_obj.IsRight),0));
 
-        
 
+        //最新のスタック以外は排除する
+        p.recorder.DeleteOldAllowStack();
 
 
     }

@@ -80,7 +80,7 @@ public class P_Doudge : P_ModeBase
             if (!Modeparam.TrunFinish)
             {
                 Modeparam.TrunFinish = true;
-                PlayerCommonAction.Turn(_obj);
+                //PlayerCommonAction.Turn(_obj);
             }
             return;
         }

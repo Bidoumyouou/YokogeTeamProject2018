@@ -330,6 +330,8 @@
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetArrowDown.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetArrowFree.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetButtonDown.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetLeftStay.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetRightStay.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_GetUpArrow_Down.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_InRange.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\Eq_IsGround.cs" />
