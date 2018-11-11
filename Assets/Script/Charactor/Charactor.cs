@@ -94,7 +94,15 @@ public class Charactor : MonoBehaviour
             if (!isHitBoxRight) { AdjustedDamegeVector.x *= -1; }
             if (nowflag.IsAbleToBeClashed && !Invisible)
             {
+                //実際に吹っ飛ぶ
                 Clash(AdjustedDamegeVector, damege.power, damege.speed);
+                //喰らいエフェクトの表示
+                if (damege.Effect != null)
+                {
+                    GameObject ef = GameObject.Instantiate(damege.Effect);
+                    ef.transform.position = transform.position;
+                    damege.Effect = null; 
+                }
             }
         }
     }

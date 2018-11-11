@@ -450,6 +450,7 @@
     <Compile Include="Assets\Script\Other\Global.cs" />
     <Compile Include="Assets\Script\Other\StageManager.cs" />
     <Compile Include="Assets\Script\Other\TestEffect1.cs" />
+    <Compile Include="Assets\Script\Other\TireEffect.cs" />
     <Compile Include="Assets\Script\StageMgr.cs" />
     <Compile Include="Assets\Script\Text\Text1.cs" />
     <Compile Include="Assets\Script\UI\Spawner_UI.cs" />
@@ -864,6 +865,7 @@
     <None Include="Assets\Script\Other\Global.cs.meta" />
     <None Include="Assets\Script\Other\StageManager.cs.meta" />
     <None Include="Assets\Script\Other\TestEffect1.cs.meta" />
+    <None Include="Assets\Script\Other\TireEffect.cs.meta" />
     <None Include="Assets\Script\StageMgr.cs.meta" />
     <None Include="Assets\Script\Text.meta" />
     <None Include="Assets\Script\Text\Text1.cs.meta" />

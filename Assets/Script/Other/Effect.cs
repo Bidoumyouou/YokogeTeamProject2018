@@ -5,13 +5,14 @@ public class Effect : MonoBehaviour
 {
     bool isloop;//ループするかどうか(しないなら消える)
     public bool IsRight;
-    Animation anime;
+    //Animation anime;
+    Animator anime;
     ParticleSystem particle;
     // Use this for initialization
     public void Start()
     {
         particle = GetComponent<ParticleSystem>();
-        anime = GetComponent<Animation>();
+        anime = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,10 +25,12 @@ public class Effect : MonoBehaviour
     }
     void UpdateAnime()
     {
-        if (!anime.isPlaying)
+        //アニメが終わったら消える
+        if (anime.GetCurrentAnimatorStateInfo(0).normalizedTime > 1.0f)
         {
             Destroy(this.gameObject);
         }
+
 
     }
     void UpdateParticle()
