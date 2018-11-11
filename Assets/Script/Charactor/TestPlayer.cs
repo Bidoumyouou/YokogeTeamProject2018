@@ -202,9 +202,19 @@ public class TestPlayer : Charactor {
                 renderer.color = Color.white;
 
         }
+        //無敵だったらレイヤーを変更
+        if (Invisible || !nowflag.IsAbleToBeClashed)
+        {
+            gameObject.layer = 13;//PlayerInvisible
+        }
+        else
+        {
+            gameObject.layer = 9;//PlayerInvisible
+
+        }
 
     }
-    
+
     public void Fall(int _damegevalue)
     {
         if (Mode.index != 10)
