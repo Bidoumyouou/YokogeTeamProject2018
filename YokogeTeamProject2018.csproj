@@ -377,6 +377,7 @@
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_Zyaku2.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_Zyaku3.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_Zyaku4.cs" />
+    <Compile Include="Assets\Script\Charactor\Player\Mode\P_Zyaku5.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\PlayerCommonAction.cs" />
     <Compile Include="Assets\Script\Charactor\Player\ModeFlag.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Player_IsGround.cs" />

@@ -8,13 +8,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92fea9a70352954da6243cf264f3df7, type: 3}
-  m_Name: P_Zyaku4
+  m_Script: {fileID: 11500000, guid: 27b40931d7b6a094babb8f71d67bdaf5, type: 3}
+  m_Name: P_Zyaku5
   m_EditorClassIdentifier: 
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
-  - {fileID: 1067494668101692, guid: 2cdd7719de68f1148b897457f5d706cb, type: 2}
+  - {fileID: 1804088558442554, guid: 23b0a3af1ccdca24680f7d6fc5b8486c, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -22,28 +22,36 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  index: 11
+  index: 16
   player: {fileID: 0}
-  EndTime: 0.8
+  EndTime: 1
   ChangeMode_Eq:
-  - eqition:
-    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
-    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
-    CallBack: -1
-    CallForDebug: 0
-    TargetMode: {fileID: 11400000, guid: 5c048fdca954669488690aae7b9a41e0, type: 2}
-    order: 5
   - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
     CallBack: -1
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
     order: 5
+  - eqition:
+    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 48b9dbde241be9b4db06d27095326a74, type: 2}
+    order: 5
   equitionpack:
-  - {fileID: 11400000, guid: 72b17487f68e3be4998aacd057908cdb, type: 2}
   - {fileID: 11400000, guid: fe3de19bb4c3afe4e944407830baf9a5, type: 2}
   - {fileID: 11400000, guid: bd3172640d0ae6e49b464edddbe095b1, type: 2}
+  - {fileID: 11400000, guid: 72b17487f68e3be4998aacd057908cdb, type: 2}
   AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 9f5acb0a9422f2b449b7421b07377b7f, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 0
   - eqition:
     - {fileID: 11400000, guid: 2b1ea717396bed64689547c162ecfbb9, type: 2}
     - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
@@ -69,14 +77,6 @@ MonoBehaviour:
     TargetMode: {fileID: 11400000, guid: e5ee39e36721f0c42b1f086557f31b21, type: 2}
     order: 0
   - eqition:
-    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
-    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
-    - {fileID: 11400000, guid: 9f5acb0a9422f2b449b7421b07377b7f, type: 2}
-    CallBack: -1
-    CallForDebug: 0
-    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
-    order: 0
-  - eqition:
     - {fileID: 11400000, guid: c410d1a434ae1eb46943ce1cf59dc3b6, type: 2}
     - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
     CallBack: 1
@@ -98,17 +98,17 @@ MonoBehaviour:
     TargetMode: {fileID: 11400000, guid: d9904ea6c87e2914f9b64a1c307770fc, type: 2}
     order: 4
   - eqition:
-    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
-    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
-    CallBack: -1
-    CallForDebug: 0
-    TargetMode: {fileID: 11400000, guid: 5c048fdca954669488690aae7b9a41e0, type: 2}
-    order: 5
-  - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
     CallBack: -1
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 48b9dbde241be9b4db06d27095326a74, type: 2}
     order: 5
   - eqition:
     - {fileID: 11400000, guid: b2509118a79ca6846b518fd97328fefb, type: 2}
@@ -139,9 +139,9 @@ MonoBehaviour:
     IsAbleToBeClashed: 1
     IsAbleToVisible: 1
     StartTime: 0
-    EndTime: 100
-    StartInputReceptionTime: 0
-    EndInputReceptionTime: 0.8
+    EndTime: 1
+    StartInputReceptionTime: 0.05
+    EndInputReceptionTime: Infinity
   CallBack_Reciver: -1
   targetkeylist:
   - MyZ
@@ -157,3 +157,4 @@ MonoBehaviour:
   - MyHorizontal
   - MyVertical
   MP: 0
+  test: 0

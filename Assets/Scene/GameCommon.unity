@@ -933,6 +933,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f06c8610912069c49bd3438feee088cd, type: 2}
   - {fileID: 11400000, guid: 6e29e7e88700f0941acfb460a691acd3, type: 2}
   - {fileID: 11400000, guid: 88ca99f278e35654e806f9b1a130af79, type: 2}
+  - {fileID: 11400000, guid: 5c048fdca954669488690aae7b9a41e0, type: 2}
   camera: {fileID: 955346388}
   Move_Speed: 0
   Move_Vec: {x: 2, y: 0}
