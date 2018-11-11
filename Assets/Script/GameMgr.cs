@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 
 //10/25 シーンのロード管理の機能も付与
@@ -59,6 +59,8 @@ public class GameMgr : MonoBehaviour {
                 player.transform.position = stageMgr_cmp.respawnPoint.transform.position;
             }
             Scene_Reloded = false;
+            //ここでシーンのアクティブを調節sるう
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(NowSceneName));
         }
 
 
@@ -81,26 +83,35 @@ public class GameMgr : MonoBehaviour {
     {
         if (NowSceneName == _SceneName)
             return;
-        Application.UnloadLevel(NowSceneName);
+        //現在のステージ名前でシーンを取得
+        Scene scene = SceneManager.GetSceneByName(NowSceneName);
+        SceneManager.UnloadScene(scene);
+
         Resources.UnloadUnusedAssets();
 
-        Application.LoadLevelAdditive(_SceneName);
+        //次のステージを取得
+        //Application.LoadLevelAdditive(_SceneName);
+        Scene scene2 = SceneManager.GetSceneByName(_SceneName);
+        SceneManager.LoadScene(_SceneName, LoadSceneMode.Additive);
+
         NowSceneName = _SceneName;
         //新しいStageMgrを読み込む
         //少し待ってからリスポーンポイントまでプレイヤを移動させる
-        thisobject.StartCoroutine(thisobject.FuncCoroutine());
+        thisobject.StartCoroutine(thisobject.FuncCoroutine(_SceneName));
         //thisobject.FuncCoroutine
         thisobject.Scene_Reloded = true;
         //Debug.Log("???");
     }
 
-    IEnumerator FuncCoroutine()
+    IEnumerator FuncCoroutine(string _SceneName)
     {
         while (true)
         {
-            // Do anything
+
 
             yield return new WaitForSeconds(2f);
         }
+        // Do anything
+
     }
 }

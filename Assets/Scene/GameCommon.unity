@@ -217,7 +217,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a38e1aacdaa47646b14c1206c7c1068, type: 2}
-  m_RootGameObject: {fileID: 1647001772}
   m_IsPrefabParent: 0
 --- !u!4 &114193615
 Transform:
@@ -888,7 +887,7 @@ MonoBehaviour:
     EndInputReceptionTime: 0
   Invisible: 0
   invisibletimer: 0
-  invisibletime: 3.5
+  invisibletime: 2
   renderer: {fileID: 0}
   FirstMode: 0
   tmp_velocity: 0
@@ -1174,7 +1173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467563269}
   - component: {fileID: 467563270}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BackGroundCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
