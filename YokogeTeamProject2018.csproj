@@ -442,6 +442,7 @@
     <Compile Include="Assets\Script\ObjectCaller.cs" />
     <Compile Include="Assets\Script\Object\Door.cs" />
     <Compile Include="Assets\Script\Object\GoalDoor.cs" />
+    <Compile Include="Assets\Script\Object\HealPoint.cs" />
     <Compile Include="Assets\Script\Object\RespawnPoint.cs" />
     <Compile Include="Assets\Script\Object\Spawner.cs" />
     <Compile Include="Assets\Script\Other\CameraControl.cs" />
@@ -856,6 +857,7 @@
     <None Include="Assets\Script\ObjectCaller.cs.meta" />
     <None Include="Assets\Script\Object\Door.cs.meta" />
     <None Include="Assets\Script\Object\GoalDoor.cs.meta" />
+    <None Include="Assets\Script\Object\HealPoint.cs.meta" />
     <None Include="Assets\Script\Object\RespawnPoint.cs.meta" />
     <None Include="Assets\Script\Object\Spawner.cs.meta" />
     <None Include="Assets\Script\Other.meta" />
