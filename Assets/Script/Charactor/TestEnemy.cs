@@ -16,6 +16,8 @@ using UnityEditor;
 
 public class TestEnemy : Charactor
 {
+    [Tooltip("倒したときに得られるMP")] public int MP = 3;
+
     public string name = "名前未設定";//エネミーの名前
     
     public E_ModeBase[] ModeList = new E_ModeBase[8]; 
@@ -58,9 +60,9 @@ public class TestEnemy : Charactor
         {
             Mode = ModeList[0];
         }
-        Mode.Mode_Start(this);
         animator = GetComponent<Animator>();
         BaseScale_x = transform.lossyScale.x;//;//エネミーの元々のスケールを取得
+        Mode.Mode_Start(this);
 
         
         //エネミーUIの作成
@@ -87,7 +89,9 @@ public class TestEnemy : Charactor
        
     }
 
-    override public void ChangeMode(int _nextno)
+
+
+    override public void ChangeMode(int _nextno, int _callback = -1)
     {
         //もしモードが「変わっていたら」
         if (modeindex != _nextno)
@@ -107,6 +111,11 @@ public class TestEnemy : Charactor
         modetime = 0.0f;
         Mode.index = modeindex =_nextno;
         Mode.Mode_Start(this);
+
+        if (_callback != -1)
+        {
+            Debug.Log("CallBack was Called :" + _callback.ToString());
+        }
 
     }
 
@@ -148,6 +157,7 @@ public class TestEnemy : Charactor
     //やられた時
     void Delete()
     {
+
         stage_manager.AddScore(10);
         Destroy(gameObject);
     }

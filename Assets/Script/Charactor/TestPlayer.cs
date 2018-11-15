@@ -52,6 +52,11 @@ public class TestPlayer : Charactor {
     public P_ModeBase[] SpecialActionList;
 
     Player_IsGround Isground;
+    [SerializeField] public List<string> targetkeylist;
+
+    public float keysuccesstimer;//キー入力が成立してからの待ち時間
+
+ 
     Rigidbody2D rb;
     void Start () {
         tag = E_Tag.Player;
@@ -78,7 +83,8 @@ public class TestPlayer : Charactor {
     }
 
 
-    override public void ChangeMode(int _nextno){
+    override public void ChangeMode(int _nextno, int _callback = -1){
+
         //エイリアスが設定されているモードは変換する
         if (_nextno == 101)
             _nextno = SpecialActionList[0].index;
@@ -94,7 +100,15 @@ public class TestPlayer : Charactor {
         {
             pre_mode_index = modeindex;
         }
+
+        //InputRecorderのデータの破棄
+        recorder.RemoveKey();
+
+        keysuccesstimer = 0.0f;
+
         Mode.DeleteHitBox(this);//対象のモードの当たり判定を破棄
+
+
         Mode = ModeList[_nextno];
         Mode.obj = this;
         Mode.player = this;
@@ -102,10 +116,20 @@ public class TestPlayer : Charactor {
         Mode.index = modeindex = (int)_nextno;
         animator.SetInteger("Status", Mode.index);
         animator.SetTrigger("ChangeMode");
+        
+        Mode.CallBack_Reciver = _callback;
+
         Mode.Mode_Start(this);
 
-        
-	}
+
+        if (_callback != -1)
+        {
+//            Debug.Log("CallBack was Called :" + _callback.ToString());
+        }
+
+        //
+
+    }
     public void ChangeMode(PlayerMode _nextno)
     {
         ChangeMode((int)_nextno);
@@ -152,10 +176,47 @@ public class TestPlayer : Charactor {
                 ChangeMode(9);
             }
         }
+        //キー入力成立タイマー更新
+        if(recorder.keySuccess)
+            keysuccesstimer += Time.deltaTime;
 
-        
+        //無敵タイマー更新
+        if (Invisible)
+        {
+            invisibletimer += Time.deltaTime;
+
+            if(invisibletimer > invisibletime)
+            {
+                invisibletimer = 0;
+                Invisible = false;
+            }
+        }
+        //無敵だったらカラーマスク(紫)
+        if (Invisible || !nowflag.IsAbleToBeClashed)
+        {
+            renderer.color = Color.magenta;
+        }
+        else
+        {
+            if(renderer.color == Color.magenta)
+                renderer.color = Color.white;
+
+        }
+        //無敵だったらレイヤーを変更
+        if (Invisible || !nowflag.IsAbleToBeClashed)
+        {
+            gameObject.layer = 13;//PlayerInvisible
+        }
+        else
+        {
+            gameObject.layer = 9;//Player
+
+        }
+
+        //瀕死アニメ用の体力管理
+        animator.SetBool("Deadly", (status.HP <= 2));
     }
-    
+
     public void Fall(int _damegevalue)
     {
         if (Mode.index != 10)

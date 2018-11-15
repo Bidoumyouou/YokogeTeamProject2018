@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2763aed78642be945aca82defe8a2955, type: 3}
+  m_Name: P_DoudgeHere
+  m_EditorClassIdentifier: 
+  Effect_obj: {fileID: 0}
+  obj: {fileID: 0}
+  Attack:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  index: 16
+  player: {fileID: 0}
+  EndTime: 100
+  ChangeMode_Eq: []
+  equitionpack: []
+  AllEqition: []
+  flag:
+    IsAbleToJump: 1
+    IsAbleToMove: 1
+    IsAbleToBeDameged: 1
+    IsAbleToBeClashed: 1
+    IsAbleToVisible: 1
+    StartTime: 0
+    EndTime: 100
+    StartInputReceptionTime: 0.05
+    EndInputReceptionTime: 0
+  CallBack_Reciver: -1
+  targetkeylist: []
+  MP: 0
+  Muteki_Start: 0
+  Muteki_End: 0
+  MoveStart: 0
+  MoveSpeed: 0
+  Doudge_Length: 0

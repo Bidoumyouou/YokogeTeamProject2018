@@ -10,6 +10,8 @@ using UnityEngine;
 */
 //Hitboxと両方にMonobが付いてるのは良くないのでは？
 public class Damege : MonoBehaviour {
+
+    public GameObject Effect;
     public int type;//攻撃のタイプ
     public int value;//減少させるHP
     public float power;//ノックバックのパワー

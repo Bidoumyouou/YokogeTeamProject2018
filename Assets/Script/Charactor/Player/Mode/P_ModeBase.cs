@@ -25,6 +25,8 @@ public class P_ModeBase : ModeBase
     {
         ishitbox = false;
         TestPlayer p = _obj.GetComponent<TestPlayer>();
+        //TargetKeyListの形骸化をすべく共通のセッターを入れる
+        SetAllKeyToList(p);
 
         p.recorder.SetTargetKey(targetkeylist);
         base.Mode_Start(_obj);
@@ -32,6 +34,12 @@ public class P_ModeBase : ModeBase
         //MPの消費
         p.status.MP -= MP;
     }
+
+    void SetAllKeyToList(TestPlayer _obj)
+    {
+        targetkeylist = _obj.targetkeylist;
+    }
+
     public override void Mode_Update(Charactor _obj)
     {
         //IsRightの更新

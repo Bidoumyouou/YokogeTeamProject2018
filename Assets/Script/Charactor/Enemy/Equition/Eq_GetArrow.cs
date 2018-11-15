@@ -12,7 +12,7 @@ public class Eq_GetArrow : EqitionBase
 
             TestPlayer _player = _obj.GetComponent<TestPlayer>();
             float f = Input.GetAxis("MyHorizontal");
-            if (f != 0 || Input.GetButton("MyLeft") || Input.GetButton("MyRight"))
+            if (f != 0 )
 
             {
                 if (_mode.IsInputReception(_obj))
@@ -20,6 +20,16 @@ public class Eq_GetArrow : EqitionBase
                     return true;
                 }
             }
+
+            if (Input.GetButton("MyLeft") || Input.GetButton("MyRight"))
+
+            {
+                if (_mode.IsInputReception(_obj))
+                {
+                    return true;
+                }
+            }
+
         }
         return false;
     }

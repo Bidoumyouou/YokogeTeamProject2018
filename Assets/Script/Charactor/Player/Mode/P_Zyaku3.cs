@@ -3,6 +3,7 @@
 
 public class P_Zyaku3 : P_ModeBase
 {
+
     public int test;//祖父オブジェクトがMonoBehaviorを継承していてもインスペクタでは表示されない
     public override void Mode_Start(Charactor _obj)
     {

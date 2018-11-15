@@ -21,8 +21,11 @@ public class TestEnemyUI : MonoBehaviour
         {
             s.color = new Color(1, 1, 1, 0);
         }
-        targetTfm = TargetObject.transform;
-        chara_cmp = TargetObject.GetComponent<Charactor>();
+        if (TargetObject != null)
+        {
+            targetTfm = TargetObject.transform;
+            chara_cmp = TargetObject.GetComponent<Charactor>();
+        }
         myRectTfm = GetComponent<RectTransform>();
         //targetText = GetComponent<Text>();
 

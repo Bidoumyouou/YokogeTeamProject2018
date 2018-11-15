@@ -126,7 +126,7 @@
           	var  pa=Resources.FindObjectsOfTypeAll (GameObject);
 
           		for (var px:int=0; px< pa.Length;px++ ){
-          		if( PrefabUtility.GetPrefabParent(pa[px]) == null && PrefabUtility.GetPrefabObject(pa[px]) != null)
+          		if( PrefabUtility.GetCorrespondingObjectFromSource(pa[px]) == null && PrefabUtility.GetPrefabObject(pa[px]) != null)
           		{	
   			 		STR=pa[px].name;
   					if (STR.Contains (Find.ToString()))

@@ -7,6 +7,8 @@ public class P_Jump : P_ModeBase
     public Sprite JumpSprite;
 
     bool isfall = false;
+
+    public int p = 0;
     // Use this for initialization
     public override void Mode_Start(Charactor _obj)
     {
@@ -33,7 +35,6 @@ public class P_Jump : P_ModeBase
     }
     public override void Mode_Update(Charactor _obj)
     {
-
 
 
         base.Mode_Update(_obj);

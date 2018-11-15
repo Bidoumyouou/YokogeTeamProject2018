@@ -2,11 +2,14 @@
 using UnityEditor;
 
 using System;
+using System.Collections.Generic;
 [System.Serializable]
 public class Eq_Adapter_Base : System.Object
 {
     public EqitionBase[] eqition;
+    [Tooltip("条件が実行されたときに付与する引数")] public int CallBack = -1;//条件が実行されたときに付与する引数
 
+    [Tooltip("チェックを入れればDebugLogに成立時通達する")] public bool CallForDebug;
     public virtual void Init()
     {
 
@@ -26,6 +29,10 @@ public class Eq_Adapter_Base : System.Object
             {
                 return false;
             }
+        }
+        if (CallForDebug)
+        {
+            Debug.Log("Equition Returned True");
         }
         return true;
 

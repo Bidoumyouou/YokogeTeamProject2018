@@ -27,10 +27,12 @@ public class Charactor : MonoBehaviour
     [HideInInspector] public GameObject[] hitbox = new GameObject[8];//実際に画面に発生したあたり判定 
 
     public ModeFlag nowflag;
-    public virtual void ChangeMode(int _nextno)
-    {
 
-    }
+    [HideInInspector] public bool Invisible = false;
+    [HideInInspector] public float invisibletimer = 0;
+    [Tooltip("ダメージ後無敵になる時間")] public float invisibletime = 3.5f;
+    [HideInInspector]public SpriteRenderer renderer;
+
     [Tooltip("初めに遷移するモードをindexで")] public int FirstMode;//初めに遷移するモード
     protected void ParentStart()
     {
@@ -40,6 +42,7 @@ public class Charactor : MonoBehaviour
         clash = new C_Clash();
         clash.Init(GetComponent<BoxCollider2D>());//これだと現状キャラクターの当たり判定はBoxColliderしか使えない
         caller = GetComponent<ObjectCaller>();
+        renderer = GetComponent<SpriteRenderer>();
     }
 
 
@@ -76,7 +79,7 @@ public class Charactor : MonoBehaviour
             damege = objop.GetComponent<Damege>();
             //ダメージの数値分だけHPを減らす
             //ReduceHealth(damege.value);
-            if (nowflag.IsAbleToBeDameged)
+            if (nowflag.IsAbleToBeDameged && !Invisible)
             {
                 status.HP -= damege.value;
             }
@@ -89,9 +92,17 @@ public class Charactor : MonoBehaviour
             Vector2 AdjustedDamegeVector;
             AdjustedDamegeVector = damege.vector;
             if (!isHitBoxRight) { AdjustedDamegeVector.x *= -1; }
-            if (nowflag.IsAbleToBeClashed)
+            if (nowflag.IsAbleToBeClashed && !Invisible)
             {
+                //実際に吹っ飛ぶ
                 Clash(AdjustedDamegeVector, damege.power, damege.speed);
+                //喰らいエフェクトの表示
+                if (damege.Effect != null)
+                {
+                    GameObject ef = GameObject.Instantiate(damege.Effect);
+                    ef.transform.position = transform.position;
+                    damege.Effect = null; 
+                }
             }
         }
     }
@@ -120,4 +131,8 @@ public class Charactor : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    public virtual void ChangeMode(int _nextno, int _callback = -1)
+    {
+
+    }
 }

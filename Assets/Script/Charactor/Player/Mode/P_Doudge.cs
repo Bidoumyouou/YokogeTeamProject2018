@@ -10,7 +10,7 @@ public class P_DoudgeParam : P_ModeParamBase {
 public class P_Doudge : P_ModeBase
 {
     //モードに持たせられないモード固有のパラメータを記録するメンバ
-    
+    int p = 0;
 
 
     [Tooltip("無敵開始時間")] public float Muteki_Start;
@@ -22,28 +22,32 @@ public class P_Doudge : P_ModeBase
  
     Vector2 Vector = new Vector2();
 
-
-
+    int IsRight_Doudge;//コールバックから「どっちに避けるか」を取得
+    //0..その場 1..→ 2..←
     public override void Mode_Start(Charactor _obj)
     {
         Modeparam = new P_DoudgeParam();
-
         Modeparam.Doudge_tmp = 0.0f;
         //アニメシグナルの呼び出し
         player.ChangeAnimeSignal(7);
         base.Mode_Start(_obj);
         //移動
-        
-        if (obj.IsRight)
+        IsRight_Doudge = CallBack_Reciver;
+
+        //→
+        if (IsRight_Doudge == 1)
         {
             Vector.Set(1.0f, 0.0f);
         }
-        else
+        //←
+        else if (IsRight_Doudge == 2)
         {
             Vector.Set(-1.0f, 0.0f);
         }
- 
-
+        else//その場
+        {
+            Vector.Set(0.0f, 0.0f);
+        }
     }
     public override void Mode_Update(Charactor _obj)
     {
@@ -76,11 +80,11 @@ public class P_Doudge : P_ModeBase
             if (!Modeparam.TrunFinish)
             {
                 Modeparam.TrunFinish = true;
-                PlayerCommonAction.Turn(_obj);
+                //PlayerCommonAction.Turn(_obj);
             }
             return;
         }
-        
+
         obj.transform.Translate(Time.deltaTime * Vector * MoveSpeed);
         Modeparam.Doudge_tmp += Time.deltaTime * MoveSpeed;
         //規定量まで移動していたら

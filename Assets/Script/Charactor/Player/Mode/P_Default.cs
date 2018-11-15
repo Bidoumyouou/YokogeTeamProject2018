@@ -3,7 +3,7 @@
 
 public class P_Default : P_ModeBase
 {
-
+    int p = 0;
     
     public override void Mode_Start(Charactor _obj)
     {

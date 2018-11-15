@@ -16,7 +16,7 @@ public class E005_Wait : E_ModeBase
         //感知して動く
         EnemyNest nest = _obj.GetComponent<EnemyNest>();
         CameraLockTrigger camera = nest.CameraLockTrigger.GetComponent<CameraLockTrigger>();
-        if (!camera.valid)
+        if (camera.valid)
         {
             //デフォルトへ
             _obj.ChangeMode(0);

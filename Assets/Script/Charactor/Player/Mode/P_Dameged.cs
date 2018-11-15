@@ -14,6 +14,9 @@ public class P_Dameged : P_ModeBase
         //以上、全アクション共通
         ////////////////////////
         NextMode[0] = 1;
+        TestPlayer p = _obj.GetComponent<TestPlayer>();
+        p.Invisible = true;
+
 
     }
     public override void Mode_Update(Charactor _obj)
