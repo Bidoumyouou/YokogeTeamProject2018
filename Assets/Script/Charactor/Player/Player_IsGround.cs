@@ -22,7 +22,7 @@ public class Player_IsGround : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag != "Wall")
+        if (collision.tag != "Wall" && collision.tag != "Enemy")
             return;
         if(!IsGround)
             IsGround = true;

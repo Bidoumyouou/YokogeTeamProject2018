@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -28,50 +28,48 @@ MonoBehaviour:
   ChangeMode_Eq:
   - eqition:
     - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
-    - {fileID: 11400000, guid: 3d7890fe452f58c48b2db4a3b7266c49, type: 2}
-    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: d19edeb8535b639409f80712903add0d, type: 2}
     CallBack: -1
     CallForDebug: 1
     TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
-    order: 0
+    order: 6
   - eqition:
     - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
     - {fileID: 11400000, guid: c5db6b79f3b54e2448b21278aeb8c592, type: 2}
-    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: d19edeb8535b639409f80712903add0d, type: 2}
     CallBack: -1
     CallForDebug: 1
     TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
-    order: 0
+    order: 5
   - eqition:
     - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
     CallBack: -1
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: 88ca99f278e35654e806f9b1a130af79, type: 2}
-    order: 0
+    order: 5
   equitionpack: []
   AllEqition:
   - eqition:
     - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
-    - {fileID: 11400000, guid: 3d7890fe452f58c48b2db4a3b7266c49, type: 2}
-    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
-    CallBack: -1
-    CallForDebug: 1
-    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
-    order: 0
-  - eqition:
-    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
     - {fileID: 11400000, guid: c5db6b79f3b54e2448b21278aeb8c592, type: 2}
-    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: d19edeb8535b639409f80712903add0d, type: 2}
     CallBack: -1
     CallForDebug: 1
     TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
-    order: 0
+    order: 5
   - eqition:
     - {fileID: 11400000, guid: f357fa203770b5049a0544dfa8744799, type: 2}
     CallBack: -1
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: 88ca99f278e35654e806f9b1a130af79, type: 2}
-    order: 0
+    order: 5
+  - eqition:
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: d19edeb8535b639409f80712903add0d, type: 2}
+    CallBack: -1
+    CallForDebug: 1
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 6
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
