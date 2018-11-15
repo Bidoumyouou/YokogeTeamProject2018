@@ -6,6 +6,7 @@ public class HealPoint : MonoBehaviour
     private Transform NearPlayer_t;
 
     public int HP = 10;
+    public int MP = 30;
     TestPlayer p;
     // Use this for initialization
     void Start()
@@ -39,5 +40,7 @@ public class HealPoint : MonoBehaviour
     void HealHP()
     {
         p.status.HP = HP;
+        if (p.status.MP < MP)
+            p.status.MP = MP;
     }
 }
