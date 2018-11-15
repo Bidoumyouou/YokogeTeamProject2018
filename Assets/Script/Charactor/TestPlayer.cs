@@ -149,6 +149,8 @@ public class TestPlayer : Charactor {
     }
     
     void Update () {
+
+
         ParentUpdate();
         //Move();
         //モードの行動
