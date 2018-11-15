@@ -16,6 +16,12 @@ public class E001_Dead : E_ModeBase
         //一定時間でオブジェクトを消去
         if (_obj.modetime > 0.01)
         {
+            //MPを増やす
+            TestPlayer p = GameObject.Find("TestPlayer").GetComponent<TestPlayer>();
+            TestEnemy e = _obj.GetComponent<TestEnemy>();
+
+            p.status.MP += e.MP;
+
             _obj.Delete();
             
         }

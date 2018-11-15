@@ -16,6 +16,8 @@ using UnityEditor;
 
 public class TestEnemy : Charactor
 {
+    [Tooltip("倒したときに得られるMP")] public int MP = 3;
+
     public string name = "名前未設定";//エネミーの名前
     
     public E_ModeBase[] ModeList = new E_ModeBase[8]; 
@@ -62,7 +64,7 @@ public class TestEnemy : Charactor
         BaseScale_x = transform.lossyScale.x;//;//エネミーの元々のスケールを取得
         Mode.Mode_Start(this);
 
-
+        
         //エネミーUIの作成
         StartCoroutine("SetEnemyUI");
         EnemyUI = GameMgr.thisobject.EnemyUI;
@@ -155,6 +157,7 @@ public class TestEnemy : Charactor
     //やられた時
     void Delete()
     {
+
         stage_manager.AddScore(10);
         Destroy(gameObject);
     }

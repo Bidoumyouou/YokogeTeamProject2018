@@ -1948,7 +1948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc27391bfc007f47894ad56b63bf7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstSceneName: Stage6
+  FirstSceneName: Stage7
   Canvas_Ref: {fileID: 259963395}
   EnemyUI: {fileID: 0}
   AllMode:
