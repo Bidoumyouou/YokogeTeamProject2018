@@ -9,12 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8eb657f4d0710c4eb141dca3aa52bf1, type: 3}
-  m_Name: E003_Dameged
+  m_Name: Nest_Dameged
   m_EditorClassIdentifier: 
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
-  - {fileID: 1877905793136128, guid: c979146fdc5a20243a435b8cfe01959b, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -22,15 +21,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  index: 1
+  - {fileID: 0}
+  index: 0
   player: {fileID: 0}
-  EndTime: 2
-  ChangeMode_Eq:
-  - eqition: []
-    CallBack: 0
-    CallForDebug: 0
-    TargetMode: {fileID: 0}
-    order: 0
+  EndTime: 0.1
+  ChangeMode_Eq: []
   equitionpack: []
   AllEqition: []
   flag:
@@ -41,9 +36,9 @@ MonoBehaviour:
     IsAbleToVisible: 1
     StartTime: 0
     EndTime: 100
-    StartInputReceptionTime: 0
+    StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
   AttackRange: 0
-  ChangeToPre_index: 0
+  ChangeToPre_index: 1
   StopTime: 0

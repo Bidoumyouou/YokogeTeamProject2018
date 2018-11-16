@@ -140,6 +140,7 @@ public class TestEnemy : Charactor
         //ClashクラスがアクティブならDamegedモードに遷移
         if (clash.Active)
         {
+            //Damegedに遷移
             ChangeMode(1);
         }
         //状態の管理

@@ -13,8 +13,9 @@ public class Damege : MonoBehaviour {
 
     public GameObject Effect;
     public int type;//攻撃のタイプ
-    public int value;//減少させるHP
-    public float power;//ノックバックのパワー
+    [Tooltip("攻撃の強靭度")] public int Strength = 1;
+    [Tooltip("減少させるHP")]public int value;//減少させるHP
+    [Tooltip("ノックバックのパワー")] public float power;//ノックバックのパワー
     public Vector2 vector;//ノックバックのベクトル
     public float speed;//ノックバックのスピード。１が標準
     public void Set(int _type, int _value, float _power, Vector2 _vector, float _speed = 1)
