@@ -112,10 +112,6 @@ public class TestEnemy : Charactor
         Mode.index = modeindex =_nextno;
         Mode.Mode_Start(this);
 
-        if (_callback != -1)
-        {
-            Debug.Log("CallBack was Called :" + _callback.ToString());
-        }
 
     }
 
@@ -140,7 +136,9 @@ public class TestEnemy : Charactor
         //ClashクラスがアクティブならDamegedモードに遷移
         if (clash.Active)
         {
-            //Damegedに遷移
+            //もし強靭度条件を満たしていたらDamegedに遷移
+
+
             ChangeMode(1);
         }
         //状態の管理

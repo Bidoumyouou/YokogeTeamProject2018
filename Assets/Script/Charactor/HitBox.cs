@@ -77,11 +77,13 @@ public class HitBox : MonoBehaviour
             chara_caller = objop.GetComponent<ObjectCaller>();
             if (chara_caller.AttackHit)
             {
-                IsHit = true;
+                //IsHit = true;
             }
         }
         if (status.DeleteToHit)
         {
+            //タグを変えることによる強制回避
+            gameObject.tag = "UnTagged";
             Destroy(gameObject);
         }
     }

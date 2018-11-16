@@ -68,8 +68,12 @@ public class Charactor : MonoBehaviour
     hitbox ...自分についてるHitbox
 
      */
+    Collider2D tmp_col = new Collider2D();//1回当たったオブジェクトを一時的に感知
+
     void OnTriggerEnter2D(Collider2D col)
     {
+        
+
         if (CheckTagForTrigger(col))
         {
             //コーラーの被ダメ判定をtrueにする
@@ -79,23 +83,50 @@ public class Charactor : MonoBehaviour
             damege = objop.GetComponent<Damege>();
             //ダメージの数値分だけHPを減らす
             //ReduceHealth(damege.value);
-            if (nowflag.IsAbleToBeDameged && !Invisible)
+            HitBox hitbox = objop.GetComponent<HitBox>();
+
+
+            if (nowflag.IsAbleToBeDameged && !Invisible && (tmp_col != col))
             {
+                tmp_col = col;
                 status.HP -= damege.value;
             }
             //ダメージ処理
             //(プレイヤーの向きを加味したい)
-            HitBox hitbox = objop.GetComponent<HitBox>();
             bool isHitBoxRight = hitbox.isRight;
             //プレイヤーの向きによって吹っ飛びの向きを分岐
             //↑キャラクタの向きによって吹っ飛びの向きが違うのはおかしいのでは？
             Vector2 AdjustedDamegeVector;
             AdjustedDamegeVector = damege.vector;
+        
+
             if (!isHitBoxRight) { AdjustedDamegeVector.x *= -1; }
-            if (nowflag.IsAbleToBeClashed && !Invisible)
+            //無敵状態でなければ
+            if (nowflag.IsAbleToBeClashed && !Invisible && !hitbox.IsHit)
             {
-                //実際に吹っ飛ぶ
-                Clash(AdjustedDamegeVector, damege.power, damege.speed);
+                //強靭度条件を満たしていたら
+                if(col.tag == "PlayerAttack" && tag == E_Tag.Enemy)
+                {
+                    E_ModeBase e_mode = (E_ModeBase)GetComponent<TestEnemy>().Mode;
+                   if(damege.Strength > e_mode.Strength)
+                    {
+                        //HitBoxのColliderより先にこっちが呼ばれていたらIsHitを弄る
+                        hitbox.IsHit = true;
+
+                        //実際に吹っ飛ぶ
+                        Clash(AdjustedDamegeVector, damege.power, damege.speed);
+                    }
+                }
+                else
+                {
+                    //HitBoxのColliderより先にこっちが呼ばれていたらIsHitを弄る
+                    hitbox.IsHit = true;
+
+
+                    //実際に吹っ飛ぶ
+                    Clash(AdjustedDamegeVector, damege.power, damege.speed);
+
+                }
                 //喰らいエフェクトの表示
                 if (damege.Effect != null)
                 {
