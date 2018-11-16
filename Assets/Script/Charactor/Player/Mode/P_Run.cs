@@ -38,6 +38,8 @@ public class P_Run : P_ModeBase
         HackRecorder(p);
 
     }
+    
+
     public override void Mode_Update(Charactor _obj)
     {
         base.Mode_Update(_obj);
