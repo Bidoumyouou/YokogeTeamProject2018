@@ -120,6 +120,7 @@
     <Compile Include="Assets\Script\Charactor\HitBox.cs" />
     <Compile Include="Assets\Script\Charactor\ModeBase.cs" />
     <Compile Include="Assets\Script\Charactor\Player\HitBox_Move.cs" />
+    <Compile Include="Assets\Script\Charactor\Player\HitBox_ShadowGrip.cs" />
     <Compile Include="Assets\Script\Charactor\Player\InputRecorder.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\AttackStatus.cs" />
     <Compile Include="Assets\Script\Charactor\Player\Mode\P_AirAttack.cs" />

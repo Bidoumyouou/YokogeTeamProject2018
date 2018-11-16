@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212227085829581876}
   - component: {fileID: 111191926673190186}
   - component: {fileID: 114736809904086828}
-  - component: {fileID: 114746863755323744}
   - component: {fileID: 58318380958175376}
+  - component: {fileID: 114751124407133340}
   m_Layer: 2
   m_Name: Test_ShadowGrip
   m_TagString: PlayerAttack
@@ -87,12 +87,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Effect: {fileID: 0}
   type: 1
-  Strength: 1
+  Strength: 4
   value: 2
   power: 4
   vector: {x: -1, y: 0}
   speed: 4
---- !u!114 &114746863755323744
+--- !u!114 &114751124407133340
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463633376021984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1508234f9d1d17a409401e9d1de56bfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 333ac9cad8dd8e249ba48b194ccab076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   status:
@@ -108,11 +108,12 @@ MonoBehaviour:
     DeleteToChangeMode: 1
     EndTime: 100
   IsHit: 0
-  hit_col: {fileID: 58318380958175376}
+  hit_col: {fileID: 0}
   isRight: 1
   chara_caller: {fileID: 0}
-  speed: 0.4
+  speed: 0.3
   vector: {x: 1, y: 0}
+  length: 3
 --- !u!212 &212227085829581876
 SpriteRenderer:
   m_ObjectHideFlags: 1
