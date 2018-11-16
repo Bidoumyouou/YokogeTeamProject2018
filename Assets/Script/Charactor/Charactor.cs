@@ -106,7 +106,8 @@ public class Charactor : MonoBehaviour
                 tmp_col = col;
                 status.HP -= damege.value;
                 //自身がプレイヤーならMPを回収する
-                hitbox.chara.RecoverMP(hitbox.MPRecover);
+                if(hitbox.chara != null)
+                    hitbox.chara.RecoverMP(hitbox.MPRecover);
             }
             //ダメージ処理
             //(プレイヤーの向きを加味したい)

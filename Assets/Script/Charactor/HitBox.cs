@@ -40,14 +40,7 @@ public class HitBox : MonoBehaviour
         //自分で自分のisRgihtを管理する
         if (chara == null)
         {
-            if (this.transform.lossyScale.x > 0)
-            {
-                isRight = true;
-            }
-            else
-            {
-                isRight = false;
-            }
+      
         }
         else
         {
@@ -90,7 +83,7 @@ public class HitBox : MonoBehaviour
         if (status.DeleteToHit)
         {
             //タグを変えることによる強制回避
-            gameObject.tag = "UnTagged";
+            //GameObject.tag = "UnTagged";
             Destroy(gameObject);
         }
     }

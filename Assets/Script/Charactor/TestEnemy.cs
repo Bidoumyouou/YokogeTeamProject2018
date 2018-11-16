@@ -119,7 +119,17 @@ public class TestEnemy : Charactor
     // Update is called once per frame
     protected void Update()
     {
-        
+        //ダメージ受けてたらマスク(赤)
+        if (Mode.index == 1)
+        {
+            renderer.color = Color.red;
+        }
+        else
+        {
+            if (renderer.color == Color.red)
+                renderer.color = Color.white;
+
+        }
 
         //Modename = Mode.obj.name;
         IsRight = (transform.localScale.x > 0);

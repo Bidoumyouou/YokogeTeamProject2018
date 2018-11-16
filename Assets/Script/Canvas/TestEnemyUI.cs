@@ -54,6 +54,7 @@ public class TestEnemyUI : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+
         //関連付けされてるオブジェクトが消えたら自身も消滅する
     }
 }
