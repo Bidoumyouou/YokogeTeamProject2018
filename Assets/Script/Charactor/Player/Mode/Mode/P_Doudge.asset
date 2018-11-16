@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
     EndTime: 0.8
     StartInputReceptionTime: 0
     EndInputReceptionTime: Infinity
-  CallBack_Reciver: 1
+  CallBack_Reciver: 2
   targetkeylist:
   - MyZ
   - MyX

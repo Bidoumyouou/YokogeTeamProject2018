@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 0}
   index: 1
   player: {fileID: 0}
-  EndTime: 2
+  EndTime: 1
   ChangeMode_Eq:
   - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
@@ -51,6 +51,7 @@ MonoBehaviour:
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
+  Strength: 0
   AttackRange: 0
   ChangeToPre_index: 0
   StopTime: 0

@@ -696,7 +696,7 @@ MonoBehaviour:
   status:
     Alive: 1
     HP: 5000
-    MP: 5000
+    MP: 50
     level: 0
   RayForHit: {x: 0, y: 0}
   gameobject_player: {fileID: 0}
@@ -1728,6 +1728,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45,
         type: 2}
+    - target: {fileID: 114683846070221938, guid: 77ce5a83ae9840a418aeed7ea85d411b,
+        type: 2}
+      propertyPath: status.HP
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
   m_IsPrefabAsset: 0

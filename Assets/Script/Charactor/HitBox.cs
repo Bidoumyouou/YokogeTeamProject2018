@@ -38,14 +38,22 @@ public class HitBox : MonoBehaviour
     protected void Update()
     {
         //自分で自分のisRgihtを管理する
-        if(this.transform.lossyScale.x > 0)
+        if (chara == null)
         {
-            isRight = true;
+            if (this.transform.lossyScale.x > 0)
+            {
+                isRight = true;
+            }
+            else
+            {
+                isRight = false;
+            }
         }
         else
         {
-            isRight = false;
+            isRight = chara.IsRight;
         }
+
         time = Time.deltaTime;
         //時間が来たら破棄する
         if(time >= status.EndTime)

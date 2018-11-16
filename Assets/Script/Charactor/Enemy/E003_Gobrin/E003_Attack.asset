@@ -51,7 +51,7 @@ MonoBehaviour:
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
-  Strength: 2
+  Strength: 1
   AttackRange: 2
   AttackTime: 0.7
   dash_speed: 0

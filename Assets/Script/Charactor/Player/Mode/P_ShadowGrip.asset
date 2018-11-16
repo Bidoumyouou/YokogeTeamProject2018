@@ -67,7 +67,7 @@ MonoBehaviour:
     order: 9
   flag:
     IsAbleToJump: 1
-    IsAbleToMove: 1
+    IsAbleToMove: 0
     IsAbleToBeDameged: 1
     IsAbleToBeClashed: 1
     IsAbleToVisible: 1

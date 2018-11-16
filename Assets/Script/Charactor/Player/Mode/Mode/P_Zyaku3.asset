@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
     order: 7
   flag:
     IsAbleToJump: 1
-    IsAbleToMove: 1
+    IsAbleToMove: 0
     IsAbleToBeDameged: 1
     IsAbleToBeClashed: 1
     IsAbleToVisible: 1

@@ -8,15 +8,15 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1922234709677742}
-  m_IsPrefabParent: 1
+  m_IsPrefabAsset: 1
 --- !u!1 &1922234709677742
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4727349480347298}
   - component: {fileID: 212775722334649104}
@@ -30,14 +30,14 @@ GameObject:
   m_Layer: 10
   m_Name: Gobrin
   m_TagString: Enemy
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4727349480347298
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -51,7 +51,7 @@ Transform:
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_BodyType: 0
@@ -70,7 +70,7 @@ Rigidbody2D:
 --- !u!58 &58045742304259574
 CircleCollider2D:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 0
@@ -85,7 +85,7 @@ CircleCollider2D:
 --- !u!58 &58614909132933260
 CircleCollider2D:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 1
@@ -100,7 +100,7 @@ CircleCollider2D:
 --- !u!61 &61324386184458564
 BoxCollider2D:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 1
@@ -126,7 +126,7 @@ BoxCollider2D:
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 1
@@ -143,7 +143,7 @@ Animator:
 --- !u!114 &114112154239635126
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 1
@@ -156,7 +156,7 @@ MonoBehaviour:
 --- !u!114 &114683846070221938
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 6
+    HP: 60
     MP: 0
     level: 0
   RayForHit: {x: 0, y: 0}
@@ -203,8 +203,10 @@ MonoBehaviour:
   invisibletimer: 0
   invisibletime: 3.5
   renderer: {fileID: 0}
+  Grip: {fileID: 0}
   FirstMode: 3
   tmp_velocity: 0
+  MP: 3
   name: Gobrin
   ModeList:
   - {fileID: 11400000, guid: 1602355a9ff90724bba43cfcaa344ab3, type: 2}
@@ -221,7 +223,7 @@ MonoBehaviour:
 --- !u!212 &212775722334649104
 SpriteRenderer:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922234709677742}
   m_Enabled: 1
@@ -263,3 +265,4 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

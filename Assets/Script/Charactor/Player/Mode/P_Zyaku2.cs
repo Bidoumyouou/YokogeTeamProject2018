@@ -39,13 +39,7 @@ public class P_Zyaku2 : P_ModeBase
             _obj.transform.Translate(_p.Move_Vec_Norm * _p.Move_Speed );
 
         }
-        //コーラーの状況でZキー追加入力で派生
-        if (base.IsInputReception(_obj))
-        {
-            base.Move();//入力受付フレーム中なら移動可能
- 
-        }
-       
+    
 
     }
 
