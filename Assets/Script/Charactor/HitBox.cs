@@ -7,11 +7,10 @@ public class HitBox : MonoBehaviour
     public AttackStatus status;
     Damege damege;//ダメージ特性がついていればさがして当てはめる
     public bool isGrip = false;
-
-
+    public int MPRecover = 0;
     [HideInInspector]public bool IsHit = false;//攻撃が当たったか
     [HideInInspector]public Collider2D hit_col;
-    Charactor chara;
+    [HideInInspector]public Charactor chara;
     // Use this for initialization
     //[HideInInspector]
     public bool isRight;//発生した時点でキャラクターが向いていた方向

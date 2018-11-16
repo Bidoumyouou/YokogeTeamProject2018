@@ -69,8 +69,21 @@ public class Charactor : MonoBehaviour
     objop ... 当たり判定のオブジェクト
     hitbox ...自分についてるHitbox
 
+    
+
      */
     Collider2D tmp_col = new Collider2D();//1回当たったオブジェクトを一時的に感知
+
+    void RecoverMP(int _n)
+    {
+        TestPlayer p = GetComponent<TestPlayer>();
+        if (p != null)
+        {
+            p.status.MP += _n;
+            if (p.status.MP > 100)
+                p.status.MP = 100;
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -92,6 +105,8 @@ public class Charactor : MonoBehaviour
             {
                 tmp_col = col;
                 status.HP -= damege.value;
+                //自身がプレイヤーならMPを回収する
+                hitbox.chara.RecoverMP(hitbox.MPRecover);
             }
             //ダメージ処理
             //(プレイヤーの向きを加味したい)

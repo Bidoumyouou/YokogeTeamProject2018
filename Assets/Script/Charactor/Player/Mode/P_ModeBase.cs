@@ -53,6 +53,17 @@ public class P_ModeBase : ModeBase
             {
                 _obj.IsRight = false;
             }
+
+            
+        }
+        //IsRightによる向きの調整
+        if (_obj.IsRight)
+        {
+            _obj.transform.localScale = new Vector3(_obj.BaseScale_x, _obj.transform.localScale.y, _obj.transform.localScale.z);
+        }
+        else
+        {
+            _obj.transform.localScale = new Vector3(-_obj.BaseScale_x, _obj.transform.localScale.y, _obj.transform.localScale.z);
         }
         //ジャンプ待ち時間の調整
         TestPlayer _p = _obj.GetComponent<TestPlayer>();

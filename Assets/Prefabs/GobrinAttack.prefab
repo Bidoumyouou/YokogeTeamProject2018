@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1676856642418214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.09909, y: -18.570776, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,8 +89,11 @@ MonoBehaviour:
     DeleteToHit: 1
     DeleteToChangeMode: 1
     EndTime: 100
+  isGrip: 0
+  MPRecover: 0
   IsHit: 0
   hit_col: {fileID: 0}
+  chara: {fileID: 0}
   isRight: 0
   chara_caller: {fileID: 0}
   speed: 0
@@ -109,7 +112,7 @@ MonoBehaviour:
   Effect: {fileID: 0}
   type: 1
   Strength: 1
-  value: 1
+  value: 10
   power: 6
   vector: {x: 1, y: 0.2}
   speed: 2
