@@ -62,6 +62,15 @@ static public class PlayerCommonAction
     static public void Turn(Charactor _obj)
     {
         _obj.IsRight = !_obj.IsRight;
-        _obj.transform.localScale = new Vector3(-1 * _obj.transform.localScale.x, _obj.transform.localScale.y, _obj.transform.localScale.z);
+        if (_obj.IsRight)
+        {
+            _obj.transform.localScale = new Vector3(_obj.BaseScale_x, _obj.transform.localScale.y, _obj.transform.localScale.z);
+        }
+        else
+        {
+            _obj.transform.localScale = new Vector3(- _obj.BaseScale_x, _obj.transform.localScale.y, _obj.transform.localScale.z);
+
+        }
+
     }
 }

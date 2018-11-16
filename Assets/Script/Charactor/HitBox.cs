@@ -6,7 +6,7 @@ public class HitBox : MonoBehaviour
 {
     public AttackStatus status;
     Damege damege;//ダメージ特性がついていればさがして当てはめる
-
+    public bool isGrip = false;
 
 
     [HideInInspector]public bool IsHit = false;//攻撃が当たったか

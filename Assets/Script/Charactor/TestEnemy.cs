@@ -68,6 +68,7 @@ public class TestEnemy : Charactor
         //エネミーUIの作成
         StartCoroutine("SetEnemyUI");
         EnemyUI = GameMgr.thisobject.EnemyUI;
+        pre_mode_index = modeindex;
 
     }
 

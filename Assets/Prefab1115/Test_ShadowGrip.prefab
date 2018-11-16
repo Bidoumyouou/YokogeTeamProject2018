@@ -107,6 +107,7 @@ MonoBehaviour:
     DeleteToHit: 0
     DeleteToChangeMode: 1
     EndTime: 100
+  isGrip: 1
   IsHit: 0
   hit_col: {fileID: 0}
   isRight: 1

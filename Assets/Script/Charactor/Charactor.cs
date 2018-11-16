@@ -5,7 +5,7 @@ public class Charactor : MonoBehaviour
 {
 
     public StageManager stage_manager;
-    [HideInInspector] public bool IsRight = true;
+    public bool IsRight = true;
     [HideInInspector] public E_Tag tag;
     // Use this for initialization
     [HideInInspector] public Rigidbody2D rigidbody2d;
@@ -32,6 +32,8 @@ public class Charactor : MonoBehaviour
     [HideInInspector] public float invisibletimer = 0;
     [Tooltip("ダメージ後無敵になる時間")] public float invisibletime = 3.5f;
     [HideInInspector]public SpriteRenderer renderer;
+
+    [HideInInspector]public HitBox Grip;//掴まれている対象のtransform;
 
     [Tooltip("初めに遷移するモードをindexで")] public int FirstMode;//初めに遷移するモード
     protected void ParentStart()
@@ -110,11 +112,21 @@ public class Charactor : MonoBehaviour
                     E_ModeBase e_mode = (E_ModeBase)GetComponent<TestEnemy>().Mode;
                    if(damege.Strength > e_mode.Strength)
                     {
-                        //HitBoxのColliderより先にこっちが呼ばれていたらIsHitを弄る
-                        hitbox.IsHit = true;
+                        //つかみかそうでないか
+                        if (!hitbox.isGrip)
+                        {
+                            //HitBoxのColliderより先にこっちが呼ばれていたらIsHitを弄る
+                            hitbox.IsHit = true;
 
-                        //実際に吹っ飛ぶ
-                        Clash(AdjustedDamegeVector, damege.power, damege.speed);
+                            //実際に吹っ飛ぶ
+                            Clash(AdjustedDamegeVector, damege.power, damege.speed);
+                        }
+                        else
+                        {
+                            //キャラクターは掴まれる
+                            Grip = hitbox;
+                            ChangeMode(6);
+                        }
                     }
                 }
                 else

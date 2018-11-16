@@ -107,6 +107,7 @@
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\EqitionBase.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\EqitionPack.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Equition\MakeHitBox_Adapter.cs" />
+    <Compile Include="Assets\Script\Charactor\Enemy\Mode\E_Gripped.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Mode\E_ModeBase.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Mode\E_ModeObject.cs" />
     <Compile Include="Assets\Script\Charactor\Enemy\Mode\E_ModeParam.cs" />

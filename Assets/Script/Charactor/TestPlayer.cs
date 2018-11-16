@@ -79,6 +79,7 @@ public class TestPlayer : Charactor {
         Isground = GetComponentInChildren<Player_IsGround>();
         //rigidbodyの読み込み
         rb = GetComponent<Rigidbody2D>();
+        pre_mode_index = modeindex;
 
     }
 

@@ -47,7 +47,7 @@ public class HitBox_ShadowGrip : HitBox
         {
             param.IsTurned = true;
         }
-        if(param.Girp_Dist < 0)
+        if(param.Girp_Dist < -1)
         {
             GameObject.Destroy(gameObject);
         }

@@ -728,6 +728,7 @@ MonoBehaviour:
   invisibletimer: 0
   invisibletime: 2
   renderer: {fileID: 0}
+  Grip: {fileID: 0}
   FirstMode: 0
   tmp_velocity: 0
   recorder:
@@ -945,6 +946,64 @@ MonoBehaviour:
   player: {fileID: 0}
   DoorMoveflag: 0
   TargetDoorNo: 0
+--- !u!1001 &522159966
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 24.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -17.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727349480347298, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114683846070221938, guid: 77ce5a83ae9840a418aeed7ea85d411b,
+        type: 2}
+      propertyPath: ModeList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 016503de66055354dbfd4d0c0b96dc75,
+        type: 2}
+    - target: {fileID: 114683846070221938, guid: 77ce5a83ae9840a418aeed7ea85d411b,
+        type: 2}
+      propertyPath: ModeList.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45,
+        type: 2}
+    - target: {fileID: 1922234709677742, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+      propertyPath: m_Name
+      value: Gobrin (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &530296726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,6 +1721,12 @@ Prefab:
       propertyPath: ModeList.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 016503de66055354dbfd4d0c0b96dc75,
+        type: 2}
+    - target: {fileID: 114683846070221938, guid: 77ce5a83ae9840a418aeed7ea85d411b,
+        type: 2}
+      propertyPath: ModeList.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 09e5cce89350800418591f259ca66a45,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ce5a83ae9840a418aeed7ea85d411b, type: 2}
