@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 0}
   index: 4
   player: {fileID: 0}
-  EndTime: 1
+  EndTime: 1.3
   ChangeMode_Eq:
   - eqition:
     - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
@@ -33,7 +33,13 @@ MonoBehaviour:
     TargetMode: {fileID: 11400000, guid: bf6b2b843c6019241b80070d6ad9192c, type: 2}
     order: 0
   equitionpack: []
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: bf6b2b843c6019241b80070d6ad9192c, type: 2}
+    order: 0
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
@@ -45,6 +51,7 @@ MonoBehaviour:
     StartInputReceptionTime: 0.05
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
+  Strength: 2
   AttackRange: 2
   AttackTime: 0.7
   dash_speed: 0

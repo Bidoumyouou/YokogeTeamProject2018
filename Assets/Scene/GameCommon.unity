@@ -695,8 +695,8 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   status:
     Alive: 1
-    HP: 10
-    MP: 50
+    HP: 5000
+    MP: 5000
     level: 0
   RayForHit: {x: 0, y: 0}
   gameobject_player: {fileID: 0}
@@ -1969,7 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc27391bfc007f47894ad56b63bf7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstSceneName: Stage7
+  FirstSceneName: Stage0
   Canvas_Ref: {fileID: 259963395}
   EnemyUI: {fileID: 0}
   AllMode:

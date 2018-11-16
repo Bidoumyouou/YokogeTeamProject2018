@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Effect: {fileID: 1924171010822628, guid: e8f87c50ef8ce3547b9d523a295e1849, type: 2}
   type: 0
+  Strength: 1
   value: 1
   power: 0.3
   vector: {x: 0.1, y: 0}
