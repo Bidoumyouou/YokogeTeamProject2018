@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 namespace BidouLib
 {
-    
+
+
     public static class Global
     {
         //bool型を1or-1に変換する

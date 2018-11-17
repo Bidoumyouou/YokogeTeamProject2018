@@ -20,12 +20,15 @@ public class GameMgr : MonoBehaviour {
 
     public GameObject Canvas_Ref;
 
+    public AudioPlayer audioplayer;
+
     [HideInInspector]public GameObject EnemyUI;
     // Use this for initialization
 
     [Tooltip("全ての初期化したいモードはここに入れる")]public ModeBase[] AllMode;
     private void Awake()
     {
+        audioplayer.Init();
         //ResourceLoadは最速でAwakeから入る
         //FirstStageを手動でロードする
         Application.LoadLevelAdditive(FirstSceneName);

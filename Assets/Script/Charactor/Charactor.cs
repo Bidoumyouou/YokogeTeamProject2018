@@ -4,6 +4,9 @@ using System.Collections;
 public class Charactor : MonoBehaviour
 {
 
+    public AudioPlayer audioPlayer;
+    [Tooltip("Animationでこの変数を弄る")]public int audio_index = -1;
+
     public StageManager stage_manager;
     public bool IsRight = true;
     [HideInInspector] public E_Tag tag;
@@ -55,7 +58,7 @@ public class Charactor : MonoBehaviour
         modetime += Time.deltaTime;
         clash.Action(this.transform, this.caller);
         //RigidBotyからvelocityを記録
-
+        audio_index = audioPlayer.Update(audio_index);
     }
 
     private void LateUpdate()
