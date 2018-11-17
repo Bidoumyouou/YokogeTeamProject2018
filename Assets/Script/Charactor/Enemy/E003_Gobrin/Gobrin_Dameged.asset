@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8eb657f4d0710c4eb141dca3aa52bf1, type: 3}
   m_Name: Gobrin_Dameged
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0.02
+    index: 4
+    Played: 0
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:

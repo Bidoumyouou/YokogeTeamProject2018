@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e239663a6433c07458b91dd66ad06a93, type: 3}
   m_Name: E003_Attack
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0.6
+    index: 2
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:

@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3530440a43d56714e83957e954d59568, type: 3}
   m_Name: P_Assalt
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0
+    index: 1
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:

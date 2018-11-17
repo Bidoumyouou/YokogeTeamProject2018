@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6b576389f737b48bce0920192e82b9, type: 3}
   m_Name: P_Zyaku2
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0
+    index: 0
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:

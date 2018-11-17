@@ -155,9 +155,11 @@ public class TestPlayer : Charactor {
     void Update () {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            audio_index = 0;
-            //testAuido.Play();
-            Debug.Log("Player");
+            audioPlayer.PlayBGM(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            audioPlayer.PlayBGM(1);
         }
 
         ParentUpdate();

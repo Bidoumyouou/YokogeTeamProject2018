@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b202df48144cc479b6887752f0103a, type: 3}
   m_Name: P_ShadowGrip
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0
+    index: 4
+    Played: 0
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:

@@ -4,6 +4,8 @@ using System.Collections;
 //攻撃判定がもつオブジェクトとしての性質
 public class HitBox : MonoBehaviour
 {
+    [Tooltip("再生したい音源の番号、-1で再生しない")]public int AudioIndex = -1;
+
     public AttackStatus status;
     Damege damege;//ダメージ特性がついていればさがして当てはめる
     public bool isGrip = false;
@@ -17,6 +19,11 @@ public class HitBox : MonoBehaviour
     float time = 0;
     protected void Start()
     {
+        AudioPlayer audio = GameObject.Find("AudioList").GetComponent<AudioPlayer>();
+        if(AudioIndex != -1 && audio != null)
+        {
+            audio.Play(AudioIndex);
+        }
 
         //
         damege = GetComponent<Damege>();

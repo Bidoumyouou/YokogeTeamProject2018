@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986f4b4ff2afcbf40b9c410a9bcd165e, type: 3}
   m_Name: P_Swing
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0
+    index: 0
+    Played: 1
+  - time: 0.1
+    index: 0
+    Played: 1
+  - time: 0.2
+    index: 0
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -35,7 +45,36 @@ MonoBehaviour:
     order: 0
   equitionpack:
   - {fileID: 11400000, guid: fe3de19bb4c3afe4e944407830baf9a5, type: 2}
-  AllEqition: []
+  AllEqition:
+  - eqition:
+    - {fileID: 11400000, guid: 4d3d0fbb4e7fb0f48a44f2fb2741e140, type: 2}
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: af399d3ec05eedb4d933a773434aef52, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: d6887d8e66ceb4b4f9a2bd81234ffd69, type: 2}
+    - {fileID: 11400000, guid: 95a68d521e62ff34fa408090d736abc4, type: 2}
+    - {fileID: 11400000, guid: 9f5acb0a9422f2b449b7421b07377b7f, type: 2}
+    CallBack: -1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 0cef424249f898d4195918f19be04c9b, type: 2}
+    order: 0
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 4049a6e4a8d344846b6cfffe3e8c96e7, type: 2}
+    CallBack: 2
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 7
+  - eqition:
+    - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
+    - {fileID: 11400000, guid: 1e65418624c91cc48be33418a990b5cd, type: 2}
+    CallBack: 1
+    CallForDebug: 0
+    TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
+    order: 7
   flag:
     IsAbleToJump: 1
     IsAbleToMove: 1
@@ -48,6 +87,17 @@ MonoBehaviour:
     EndInputReceptionTime: 0
   CallBack_Reciver: -1
   targetkeylist:
+  - MyZ
+  - MyX
+  - MyC
+  - MyQ
+  - MyW
+  - MyE
   - MyUp
+  - MyDown
+  - MyRight
+  - MyLeft
+  - MyHorizontal
+  - MyVertical
   MP: 10
   test: 0

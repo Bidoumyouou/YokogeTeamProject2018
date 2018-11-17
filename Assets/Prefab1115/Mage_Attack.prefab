@@ -27,7 +27,7 @@ GameObject:
   m_Layer: 12
   m_Name: Mage_Attack
   m_TagString: EnemyAttack
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1508234f9d1d17a409401e9d1de56bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioIndex: 3
   status:
     DeleteToHit: 1
     DeleteToChangeMode: 0
