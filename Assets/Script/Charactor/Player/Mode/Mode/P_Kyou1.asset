@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4353f6586b022214794a7ad1d6e6d915, type: 3}
   m_Name: P_Kyou1
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0
+    index: 1
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
@@ -121,6 +125,7 @@ MonoBehaviour:
   - eqition:
     - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
     - {fileID: 11400000, guid: 4049a6e4a8d344846b6cfffe3e8c96e7, type: 2}
+    - {fileID: 11400000, guid: d19edeb8535b639409f80712903add0d, type: 2}
     CallBack: 2
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}
@@ -128,6 +133,7 @@ MonoBehaviour:
   - eqition:
     - {fileID: 11400000, guid: 874d724ca90f96746ac5894a08fb2aa4, type: 2}
     - {fileID: 11400000, guid: 1e65418624c91cc48be33418a990b5cd, type: 2}
+    - {fileID: 11400000, guid: d19edeb8535b639409f80712903add0d, type: 2}
     CallBack: 1
     CallForDebug: 0
     TargetMode: {fileID: 11400000, guid: 10af82933f80ba542af6f96d42e6408b, type: 2}

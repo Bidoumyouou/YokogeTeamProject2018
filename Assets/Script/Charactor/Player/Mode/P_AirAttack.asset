@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,6 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ca3bd92fea73746aca5c9f14ff98c2, type: 3}
   m_Name: P_AirAttack
   m_EditorClassIdentifier: 
+  Audio_PlayTime:
+  - time: 0
+    index: 0
+    Played: 1
+  - time: 0.1
+    index: 0
+    Played: 1
   Effect_obj: {fileID: 0}
   obj: {fileID: 0}
   Attack:
