@@ -3,19 +3,24 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
-public class AudioPlayer : ScriptableObject
+public class AudioPlayer : MonoBehaviour
 {
-    public GameObject[] audiosource_prefab;
+    public List<GameObject> audiosource_prefab;
     public List<AudioSource> audiosource;
 
 
     public void Init()
     {
+
         audiosource.Clear();
 
         foreach(GameObject obj in audiosource_prefab)
         {
             audiosource.Add(obj.GetComponent<AudioSource>());
+        }
+        //オーディオソースを手動でロードする
+        foreach(AudioSource a in audiosource){
+            bool f = a.clip.LoadAudioData();
         }
     }
 
@@ -23,8 +28,10 @@ public class AudioPlayer : ScriptableObject
     {
         if(index < audiosource.Count)
         {
+            //audiosource[index].PlayOneShot(audiosource[index].clip);
+            //if (audiosource[index].isPlaying)
             audiosource[index].Play();
-            if (audiosource[index].isPlaying)
+
             {
                 Debug.Log("音楽の重み");
             }
