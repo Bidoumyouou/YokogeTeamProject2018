@@ -2058,6 +2058,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82939476715068384, guid: c374e5ab7aa71874ab94606e0308d26e,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86a4cc26d3cedf94e944b12dce63b811, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c374e5ab7aa71874ab94606e0308d26e, type: 2}
   m_IsPrefabAsset: 0
@@ -2169,7 +2174,8 @@ MonoBehaviour:
   audiosource_prefab:
   - {fileID: 1689899295}
   - {fileID: 1943910255}
-  audiosource: []
+  audiosource:
+  - {fileID: 0}
 --- !u!1 &1424541963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,7 +2481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirstSceneName: Stage0
   Canvas_Ref: {fileID: 259963395}
-  audioplayer: {fileID: 0}
+  audioplayer: {fileID: 1369922490}
   EnemyUI: {fileID: 0}
   AllMode:
   - {fileID: 11400000, guid: 205e667769296104d8201348fbbdc939, type: 2}
@@ -3277,6 +3283,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82927958038166646, guid: 77aa8464e0da2a1479082621d52795df,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cbde445f34acaf4692aad9da7b3acde, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77aa8464e0da2a1479082621d52795df, type: 2}
   m_IsPrefabAsset: 0
