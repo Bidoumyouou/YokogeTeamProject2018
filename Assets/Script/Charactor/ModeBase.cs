@@ -3,9 +3,22 @@ using UnityEditor;
 using System;
 using BidouLib;
 
+using System.Collections;
+using System.Collections.Generic;
+
+[System.Serializable]
+public class AudioPlayTime
+{
+    public float time;
+    [Tooltip("再生するサウンドの番号")]public  int index;
+    [HideInInspector] public bool Played = false;
+}
+
+
 public class ModeBase : ScriptableObject
 {
-    
+    public List<AudioPlayTime> Audio_PlayTime;
+
     public Global.ClassWithGetter<Effect> Effect = new Global.ClassWithGetter<Effect>();
     public GameObject Effect_obj;//エフェクト
 
@@ -108,6 +121,11 @@ public class ModeBase : ScriptableObject
         }
         AllEqition = tmp_eq;
 
+        //オーディオの初期化
+        foreach(AudioPlayTime t in Audio_PlayTime)
+        {
+            t.Played = false;
+        }
     }
     public virtual void Mode_Update(Charactor _obj)
     {

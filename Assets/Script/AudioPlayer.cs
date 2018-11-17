@@ -28,13 +28,11 @@ public class AudioPlayer : MonoBehaviour
     {
         if(index < audiosource.Count)
         {
-            //audiosource[index].PlayOneShot(audiosource[index].clip);
+            audiosource[index].PlayOneShot(audiosource[index].clip);
             //if (audiosource[index].isPlaying)
-            audiosource[index].Play();
+            //audiosource[index].Play();
 
-            {
-                Debug.Log("音楽の重み");
-            }
+           
         }
     }
 

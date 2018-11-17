@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
 [System.Serializable]
 public class E_ModeBase : ModeBase
 {
+
+
     [Tooltip("モードごとのボディの強靭度")]public int Strength = 0;
     
     //[HideInInspector]
